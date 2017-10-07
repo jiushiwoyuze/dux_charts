@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	/* font-family: inherit; */
+	font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, simhei, sans-serif;
+	/*font-size: 100%;*/
+	font-style: inherit;
+	/*font-weight: 900;*/
+	/*margin: 0;*/
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+
+body {
+	background:#f2f4f8;
+}
+
+header {
+	height: 60px;
+	background: #000;
+	margin: 0 auto 30px;
+	padding: 0 20px;
+	box-shadow: 0 1px 10px rgba(57, 103, 187, 0.5);
+}
+
+#title {
+	font-size: 18px;
+	text-align: left;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 100;
+}
+
+
+.card_area {
+	background: #ffffff;
+	margin-bottom: 30px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
+
+
+
+
+
+#bar_v_base,
+#bar_v_mult,
+#bar_h_base,
+#bar_h_stack {
+	height: 400px;
+}
+
+
+#pie_ring_center,
+#pie_ring,
+#pie_base,
+#pie_rose,
+#pie_nest {
+	height: 400px;
+}
+
+#line_gradient_area_three,
+#line_gradient_area_two,
+#line_gradient_area,
+#line_broken,
+#line_base_area,
+#line_base {
+	height: 350px;
+}
+
+
+#base_interest,
+#map_china {
+	height: 400px;
+}
+
+
+
+
