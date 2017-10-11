@@ -41,7 +41,10 @@
         <li <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a href="bar.php">条/柱图</a></li>
         <li <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a href="pie.php">饼/环图</a></li>
         <li <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a href="map.php">地图</a></li>
-        <li id="wise-view"><a data-toggle="tooltip" title="<img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机预览</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 提建议</a></li>
+        <li id="wise-view"><a data-toggle="tooltip" title="手机预览 <img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -53,10 +56,14 @@
             <li><a href="dux-theme.js" target="_blank">主题配置文件下载</a></li>
           </ul>
         </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://youcanyouup.info/" target="_blank">团队百科</a></li>
-        <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">设计规范 V4</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">传送门 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+            <li><a href="http://youcanyouup.info/" target="_blank">团队首页</a></li>
+            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">度量衡视觉设计规范 V4</a></li>
+            <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank">给我邮件</a></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

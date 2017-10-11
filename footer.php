@@ -3,6 +3,7 @@
         <ul class="list-inline">
           <li>&copy; UXC 2017</li>
           <li>Designed & Powered by Thirtyjin</li>
+          <li><a href="https://github.com/thirtyjin/dux_charts" target="_blank">Github</a></li>
         </ul>
 
     </footer>
