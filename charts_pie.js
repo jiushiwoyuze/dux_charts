@@ -11,11 +11,6 @@ var dataOpt = [
 
 
 
-var PieBase = echarts.init(document.getElementById('pie_base'),themename);
-var PieRing = echarts.init(document.getElementById('pie_ring'),themename);
-var PieRingCenter = echarts.init(document.getElementById('pie_ring_center'),themename);
-var PieRose = echarts.init(document.getElementById('pie_rose'),themename);
-var PieNest = echarts.init(document.getElementById('pie_nest'),themename);
 
 // 指定图表的配置项和数据
 
@@ -183,24 +178,34 @@ var pie_nest_option = {
     ]
 };
 // 使用刚指定的配置项和数据显示图表。
-PieBase.setOption(pie_base_option);
-PieRing.setOption(pie_ring_option);
-PieRingCenter.setOption(pie_ring_center_option);
-PieRose.setOption(pie_rose_option);
-PieNest.setOption(pie_nest_option);
 
 
 
-window.onresize = function() {
-    PieBase.resize();
-    PieRing.resize();
-    PieRingCenter.resize();
-    PieRose.resize();
-    PieNest.resize();
+if(document.getElementById('pie_base')) {
+    var PieBase = echarts.init(document.getElementById('pie_base'),themename);
+    PieBase.setOption(pie_base_option);
 }
 
+if(document.getElementById('pie_ring')) {
+    var PieRing = echarts.init(document.getElementById('pie_ring'),themename);
+    PieRing.setOption(pie_ring_option);
+}
 
+if(document.getElementById('pie_ring_center')) {
+    var PieRingCenter = echarts.init(document.getElementById('pie_ring_center'),themename);
+    PieRingCenter.setOption(pie_ring_center_option);
+}
 
+if(document.getElementById('pie_rose')) {
+    var PieRose = echarts.init(document.getElementById('pie_rose'),themename);
+    PieRose.setOption(pie_rose_option);
+}
+
+if(document.getElementById('pie_nest')) {
+    var PieNest = echarts.init(document.getElementById('pie_nest'),themename);
+    PieNest.setOption(pie_nest_option);
+
+}
 
 
 

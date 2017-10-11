@@ -27,373 +27,380 @@ for (var i = 0; i < data.length; i++) {
 }
 
 
+// Chart 1
 //
-// Gender Chart
-//
-var BarVBase    = echarts.init(document.getElementById('bar_v_base'),themename);
-var BarVMult    = echarts.init(document.getElementById('bar_v_mult'),themename);
-var BarHBase    = echarts.init(document.getElementById('bar_h_base'),themename);
-var BarHStack   = echarts.init(document.getElementById('bar_h_stack'),themename);
+if(document.getElementById('bar_v_base')) {
+    var BarVBase    = echarts.init(document.getElementById('bar_v_base'),themename);
+    var bar_v_base = {
+        title: {
+            text: "柱状基础图表"
+        },
+        tooltip: {
+            // 参见 dux-theme.js
+        },
+        legend: {
+            show: false,
+            data: ["总收入"],
+            right: 30
+        },
+        xAxis: [
+            {
+                type: "category",
+                boundaryGap: true,
+                axisTick: {
+                    alignWithLabel: false
+                },
+                axisLabel: {
+                    align: "center",
+                    showMaxLabel: true,
+                },
+                data: xAxisData[0]
+            }
+        ],
+        yAxis: [
+            {
+                type: "value",
+                axisLabel: {
+                    inside: false,
+                    margin: 10
+                }
+            }
+        ],
+        series: [
+            {
+                name: "总收入",
+                type: "bar",
+                // barWidth: 40,
+                barMaxWidth: 40,
+                itemStyle: {
+                    normal: {
+                        color: "rgb(57, 152, 252)"
+                    }
+                },
+                data: dataOpt[0]
+            }
+        ]
+    }
+    BarVBase.setOption(bar_v_base);
+}
 
-var bar_v_base = {
-    title: {
-        text: "柱状基础图表"
-    },
-    tooltip: {
-        // 参见 dux-theme.js
-    },
-    legend: {
-        show: false,
-        data: ["总收入"],
-        right: 30
-    },
-    xAxis: [
-        {
-            type: "category",
-            boundaryGap: true,
-            axisTick: {
-                alignWithLabel: false
+if(document.getElementById('bar_v_mult')) {
+    var BarVMult    = echarts.init(document.getElementById('bar_v_mult'),themename);
+    var bar_v_mult = {
+        title: {
+            text: "多数据柱状图表"
+            // 参见 dux-theme.js
+        },
+        tooltip: {
+            // 参见 dux-theme.js
+        },
+        legend: {
+            data: ["总收入", "PV", "UV"],
+            right: 30
+            // 参见 dux-theme.js
+        },
+        toolbox: {
+            // 参见 dux-theme.js
+        },
+        xAxis: [
+            {
+                type: "category",
+                boundaryGap: true,
+                axisTick: {
+                    alignWithLabel: false
+                },
+                axisLabel: {
+                    align: "center",
+                    showMaxLabel: true,
+                },
+                data: xAxisData[0]
+            }
+        ],
+        yAxis: [
+            {
+                type: "value",
+                axisLabel: {
+                    inside: false,
+                    margin: 10
+                }
+            }
+        ],
+        series: [
+            {
+                name: "总收入",
+                type: "bar",
+                barMaxWidth: 20,
+                itemStyle: {
+                    normal: {
+                        color: "rgb(57, 152, 252)",
+                        lineStyle: {
+                            width: 1
+                        }
+                    },
+                    emphasis: {
+                        borderWidth: 1,
+                    }
+                },
+                // 参见 dux-theme.js
+                data: dataOpt[0]
             },
-            axisLabel: {
-                align: "center",
-                showMaxLabel: true,
+            {
+                name: "PV",
+                type: "bar",
+                barMaxWidth: 20,
+                itemStyle: {
+                    normal: {
+                        color: "rgb(91, 196, 159)",
+                        lineStyle: {
+                            width: 1
+                        }
+                    },
+                    emphasis: {
+                        borderWidth: 1,
+                    }
+                },
+                // 参见 dux-theme.js
+                data: dataOpt[1]
             },
-            data: xAxisData[0]
-        }
-    ],
-    yAxis: [
-        {
-            type: "value",
-            axisLabel: {
+            {
+                name: "UV",
+                type: "bar",
+                barMaxWidth: 20,
+                itemStyle: {
+                    normal: {
+                        color: "#66D7D2",
+                        lineStyle: {
+                            width: 1
+                        }
+                    },
+                    emphasis: {
+                        borderWidth: 1,
+                    }
+                },
+                // 参见 dux-theme.js
+                data: dataOpt[2]
+            }
+        ]
+    }
+    BarVMult.setOption(bar_v_mult);
+}
+
+if(document.getElementById('bar_h_base')) {
+    var BarHBase    = echarts.init(document.getElementById('bar_h_base'),themename);
+    var bar_h_base = {
+        title: {
+            text: "条形图表"
+        },
+        
+        tooltip: {
+        },
+        legend: {
+            show:false
+        },
+        toolbox: {
+        },
+        xAxis: [
+            {
+                type: "value",
                 inside: false,
+                axisLabel: {
+                    show: false
+                },
+                splitLine: {
+                    show: false
+                },
                 margin: 10
             }
-        }
-    ],
-    series: [
-        {
-            name: "总收入",
-            type: "bar",
-            // barWidth: 40,
-            barMaxWidth: 40,
-            itemStyle: {
-                normal: {
-                    color: "rgb(57, 152, 252)"
-                }
+        ],
+        yAxis: [
+            {
+                type: "category",
+                boundaryGap: true,
+                axisLine: {
+                    show: false
+                },
+                axisLabel: {
+                    align: "right",
+                    margin: 10,
+                    showMaxLabel: true,
+                },
+                data: xAxisData[0]
+            }
+        ],
+        series: [
+            {
+                type: "bar",
+                itemStyle: {
+                    normal: {color: 'rgba(0,0,0,0.05)'}
+                },
+                barWidth: 12,
+                barGap:'-100%',
+                barCategoryGap:'40%',
+                data: dataShadow,
+                animation: false
             },
-            data: dataOpt[0]
-        }
-    ]
+            {
+                name: "图文阅读数",
+                type: "bar",
+                barWidth: 12,
+                itemStyle: {
+                    normal: {
+                        color: "#60ACFC"
+                    }
+                },
+                data: data
+            }
+        ]
+    }
+    BarHBase.setOption(bar_h_base);
 }
-var bar_v_mult = {
-    title: {
-        text: "多数据柱状图表"
-        // 参见 dux-theme.js
-    },
-    tooltip: {
-        // 参见 dux-theme.js
-    },
-    legend: {
-        data: ["总收入", "PV", "UV"],
-        right: 30
-        // 参见 dux-theme.js
-    },
-    toolbox: {
-        // 参见 dux-theme.js
-    },
-    xAxis: [
-        {
-            type: "category",
-            boundaryGap: true,
-            axisTick: {
-                alignWithLabel: false
-            },
-            axisLabel: {
-                align: "center",
-                showMaxLabel: true,
-            },
-            data: xAxisData[0]
-        }
-    ],
-    yAxis: [
-        {
-            type: "value",
-            axisLabel: {
-                inside: false,
+
+if(document.getElementById('bar_h_stack')) {
+    var BarHStack   = echarts.init(document.getElementById('bar_h_stack'),themename);
+    var bar_h_stack = {
+        title: {
+            text: "条形堆叠图表"
+        },
+        
+        tooltip: {
+        },
+        legend: {
+            show:false
+        },
+        toolbox: {
+        },
+        xAxis: [
+            {
+                type: "value",
+                axisLabel: {
+                    show: true,
+                    inside: false,
+                    margin: 10
+                },
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                        color: "#dbdbdb"
+                    }
+                },
+                splitLine: {
+                    show: true
+                },
                 margin: 10
             }
-        }
-    ],
-    series: [
-        {
-            name: "总收入",
-            type: "bar",
-            barMaxWidth: 20,
-            itemStyle: {
-                normal: {
-                    color: "rgb(57, 152, 252)",
-                    lineStyle: {
-                        width: 1
+        ],
+        yAxis: [
+            {
+                type: "category",
+                boundaryGap: true,
+                axisLine: {
+                    show: false
+                },
+                axisLabel: {
+                    align: "right",
+                    margin: 10,
+                    showMaxLabel: true,
+                },
+            data: ['周一','周二','周三','周四','周五','周六','周日']
+            }
+        ],
+        series: [
+            {
+                name: '直接访问',
+                type: 'bar',
+                barWidth: 20,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    },
+                    emphasis:{
+                        show:true,
+                        position: 'insideRight'
                     }
                 },
-                emphasis: {
-                    borderWidth: 1,
-                }
+                data: [320, 302, 301, 334, 390, 330, 320]
             },
-            // 参见 dux-theme.js
-            data: dataOpt[0]
-        },
-        {
-            name: "PV",
-            type: "bar",
-            barMaxWidth: 20,
-            itemStyle: {
-                normal: {
-                    color: "rgb(91, 196, 159)",
-                    lineStyle: {
-                        width: 1
+            {
+                name: '邮件营销',
+                type: 'bar',
+                barWidth: 20,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    },
+                    emphasis:{
+                        show:true,
+                        position: 'insideRight'
                     }
                 },
-                emphasis: {
-                    borderWidth: 1,
-                }
+                data: [120, 132, 101, 134, 90, 230, 210]
             },
-            // 参见 dux-theme.js
-            data: dataOpt[1]
-        },
-        {
-            name: "UV",
-            type: "bar",
-            barMaxWidth: 20,
-            itemStyle: {
-                normal: {
-                    color: "#66D7D2",
-                    lineStyle: {
-                        width: 1
+            {
+                name: '联盟广告',
+                type: 'bar',
+                barWidth: 20,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    },
+                    emphasis:{
+                        show:true,
+                        position: 'insideRight'
                     }
                 },
-                emphasis: {
-                    borderWidth: 1,
-                }
+                data: [220, 182, 191, 234, 290, 330, 310]
             },
-            // 参见 dux-theme.js
-            data: dataOpt[2]
-        }
-    ]
-}
-var bar_h_base = {
-    title: {
-        text: "条形图表"
-    },
-    
-    tooltip: {
-    },
-    legend: {
-        show:false
-    },
-    toolbox: {
-    },
-    xAxis: [
-        {
-            type: "value",
-            inside: false,
-            axisLabel: {
-                show: false
-            },
-            splitLine: {
-                show: false
-            },
-            margin: 10
-        }
-    ],
-    yAxis: [
-        {
-            type: "category",
-            boundaryGap: true,
-            axisLine: {
-                show: false
-            },
-            axisLabel: {
-                align: "right",
-                margin: 10,
-                showMaxLabel: true,
-            },
-            data: xAxisData[0]
-        }
-    ],
-    series: [
-        {
-            type: "bar",
-            itemStyle: {
-                normal: {color: 'rgba(0,0,0,0.05)'}
-            },
-            barWidth: 12,
-            barGap:'-100%',
-            barCategoryGap:'40%',
-            data: dataShadow,
-            animation: false
-        },
-        {
-            name: "图文阅读数",
-            type: "bar",
-            barWidth: 12,
-            itemStyle: {
-                normal: {
-                    color: "#60ACFC"
-                }
-            },
-            data: data
-        }
-    ]
-}
-var bar_h_stack = {
-    title: {
-        text: "条形堆叠图表"
-    },
-    
-    tooltip: {
-    },
-    legend: {
-        show:false
-    },
-    toolbox: {
-    },
-    xAxis: [
-        {
-            type: "value",
-            axisLabel: {
-                show: true,
-                inside: false,
-                margin: 10
-            },
-            axisLine: {
-                show: false,
-                lineStyle: {
-                    color: "#dbdbdb"
-                }
-            },
-            splitLine: {
-                show: true
-            },
-            margin: 10
-        }
-    ],
-    yAxis: [
-        {
-            type: "category",
-            boundaryGap: true,
-            axisLine: {
-                show: false
-            },
-            axisLabel: {
-                align: "right",
-                margin: 10,
-                showMaxLabel: true,
-            },
-        data: ['周一','周二','周三','周四','周五','周六','周日']
-        }
-    ],
-    series: [
-        {
-            name: '直接访问',
-            type: 'bar',
-            barWidth: 20,
-            stack: '总量',
-            label: {
-                normal: {
-                    show: false,
-                    position: 'insideRight'
+            {
+                name: '视频广告',
+                type: 'bar',
+                barWidth: 20,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    },
+                    emphasis:{
+                        show:true,
+                        position: 'insideRight'
+                    }
                 },
-                emphasis:{
-                    show:true,
-                    position: 'insideRight'
-                }
+                data: [150, 212, 201, 154, 190, 330, 410]
             },
-            data: [320, 302, 301, 334, 390, 330, 320]
-        },
-        {
-            name: '邮件营销',
-            type: 'bar',
-            barWidth: 20,
-            stack: '总量',
-            label: {
-                normal: {
-                    show: false,
-                    position: 'insideRight'
+            {
+                name: '搜索引擎',
+                type: 'bar',
+                barWidth: 20,
+                stack: '总量',
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'insideRight'
+                    },
+                    emphasis:{
+                        show:true,
+                        position: 'insideRight'
+                    }
                 },
-                emphasis:{
-                    show:true,
-                    position: 'insideRight'
-                }
-            },
-            data: [120, 132, 101, 134, 90, 230, 210]
-        },
-        {
-            name: '联盟广告',
-            type: 'bar',
-            barWidth: 20,
-            stack: '总量',
-            label: {
-                normal: {
-                    show: false,
-                    position: 'insideRight'
-                },
-                emphasis:{
-                    show:true,
-                    position: 'insideRight'
-                }
-            },
-            data: [220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-            name: '视频广告',
-            type: 'bar',
-            barWidth: 20,
-            stack: '总量',
-            label: {
-                normal: {
-                    show: false,
-                    position: 'insideRight'
-                },
-                emphasis:{
-                    show:true,
-                    position: 'insideRight'
-                }
-            },
-            data: [150, 212, 201, 154, 190, 330, 410]
-        },
-        {
-            name: '搜索引擎',
-            type: 'bar',
-            barWidth: 20,
-            stack: '总量',
-            label: {
-                normal: {
-                    show: false,
-                    position: 'insideRight'
-                },
-                emphasis:{
-                    show:true,
-                    position: 'insideRight'
-                }
-            },
-            data: [820, 832, 901, 934, 1290, 1330, 1320]
-        }
-    ]
+                data: [820, 832, 901, 934, 1290, 1330, 1320]
+            }
+        ]
+    }
+    BarHStack.setOption(bar_h_stack);
 }
 
-BarVBase.setOption(bar_v_base);
-BarVMult.setOption(bar_v_mult);
-BarHBase.setOption(bar_h_base);
-BarHStack.setOption(bar_h_stack);
 
 
-window.onresize = function() {
-    BarVBase.resize();
-    BarVMult.resize();
-    BarHBase.resize();
-    BarHStack.resize();
-}
+
+
+
+
 
 
 

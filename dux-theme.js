@@ -21,14 +21,14 @@
     }
     echarts.registerTheme('dux', {
         "color": [
-            "#3279fd",
-            "#6ca7ff",
-            "#ffc979",
-            "#6a5dbd",
-            "#84aefd",
-            "#5396c7",
-            "#feeacc",
-            "#a387d1"
+            "#60ACFC",
+            "#32D3EB",
+            "#5BC49F",
+            "#FEB64D",
+            "#FF7B7B",
+            "#9287E7",
+            "#00C1E0",
+            "#9CDC82"
         ],
         "backgroundColor": "rgba(255, 255, 255, 1)",
         "textStyle": {},
@@ -41,6 +41,7 @@
             "containLabel": true
         },
         "title": {
+            "show": false,
             "left": 20,
             "top": 20,
             "textAlign": "left",
@@ -483,7 +484,10 @@
             "textStyle": {
                 "fontSize": 12,
                 "color": "rgb(51, 51, 51)"
-            }
+            },
+            "data": [{
+                "icon": "rect"
+            }]
         },
         "tooltip": {
             "trigger": "axis",

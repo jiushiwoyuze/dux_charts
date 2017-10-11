@@ -3,6 +3,10 @@
     $page_title = '线性图表 度量衡图表演示库';
     $modal_title = '线性图表配置文件';
     $option_js = 'charts_line.js';
+
+    $charts_line_name = array("line_base_area","line_base","line_broken","line_gradient_area");
+
+
 ?>
 
 
@@ -18,16 +22,50 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div id="line_base_area" class="card_area"></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="<?php echo $charts_line_name[0] ?>"></div>
+                </div>
+                <div class="panel-footer">
+                    <ul class="list-inline">
+                      <li><a href="lite_line/<?php echo $charts_line_name[0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><a href="https://codepen.io/thirtyjin/pen/BwVzbJ" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="col-md-12">
-            <div id="line_base" class="card_area"></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="<?php echo $charts_line_name[1] ?>"></div>
+                </div>
+                <div class="panel-footer">
+                    <ul class="list-inline">
+                      <li><a href="lite_line/<?php echo $charts_line_name[1] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><a href="https://codepen.io/thirtyjin/pen/GMdYEV/" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <div id="line_broken" class="card_area">123</div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="<?php echo $charts_line_name[2] ?>"></div>
+                </div>
+                <div class="panel-footer">
+                    <a href="lite_line/<?php echo $charts_line_name[2] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <div id="line_gradient_area" class="card_area"></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="<?php echo $charts_line_name[3] ?>"></div>
+                </div>
+                <div class="panel-footer">
+                    <a href="lite_line/<?php echo $charts_line_name[3] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

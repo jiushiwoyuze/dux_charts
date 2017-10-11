@@ -36,23 +36,27 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a href="index.php">首页</a></li>
+        <li <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a href="index.php">首页概览</a></li>
         <li <?php echo ($page == 'line.php') ? 'class="active"' : '';?> ><a href="line.php">线性图</a></li>
         <li <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a href="bar.php">条/柱图</a></li>
         <li <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a href="pie.php">饼/环图</a></li>
         <li <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a href="map.php">地图</a></li>
+        <li id="wise-view"><a data-toggle="tooltip" title="<img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机预览</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">图表通用主题 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助 <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a data-toggle="modal" data-target="#OptionCode" href="#">配置文件预览</a></li>
+            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">视觉设计师教程</a></li>
+            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">交互设计师教程</a></li>
+            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">开发工程师教程</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="dux-theme.js" target="_blank">配置文件下载</a></li>
+            <li><a data-toggle="modal" data-target="#OptionCode" href="#">主题配置文件预览</a></li>
+            <li><a href="dux-theme.js" target="_blank">主题配置文件下载</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://youcanyouup.info/" target="_blank">团队百科</a></li>
-        <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">度量衡规范库 V4</a></li>
+        <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">设计规范 V4</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
