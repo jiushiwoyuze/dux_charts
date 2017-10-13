@@ -12,7 +12,6 @@ $('#wise-view [data-toggle="tooltip"]').tooltip({
 
 
 
-
 // 整体窗口有变化时 调用 resize 
 // 一个页面只能有一个 window.onsize
 
@@ -44,6 +43,9 @@ window.onresize = function() {
     }
     if(document.getElementById('bar_h_stack')) {
         BarHStack.resize();
+    }
+    if(document.getElementById('bar_h_negative')) {
+        BarHNegative.resize();
     }
 
     // Pie

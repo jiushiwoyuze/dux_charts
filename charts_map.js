@@ -13,15 +13,7 @@ if(document.getElementById('map_china')) {
 
     var map_china = {
         title: {
-            text: "地域分布",
-            x: "left",
-            textAlign: "left",
-            padding: 10,
-            y: "top",
-            textStyle: {
-                fontSize: 14,
-                color: "rgb(68, 68, 68)"
-            }
+            text: "地域分布"
         },
         tooltip: {
             trigger: "item"
@@ -29,35 +21,37 @@ if(document.getElementById('map_china')) {
         legend: {
             show: false
         },
-        dataRange: {
+        visualMap: {
+            type: 'continuous',
             min: 0,
-            max: 2500,
-            x: "left",
-            y: "bottom",
-            text: ["多", "少"],
-            calculable: true
+            max: 1000,
+            text:['多','少'],
+            realtime: false,
+            left: 30,
+            calculable : true,
+            inRange: {
+                color: ['#60ACFC', 'rgba(159,205,253,0.70)'],
+                symbolSize: [100, 100]
+            },
+            outOfRange: {
+                color: ['#EEEEEE'],
+                symbolSize: [100, 100]
+            }
+            //color: ['#60ACFC','rgba(159,205,253,0.70)']
         },
         toolbox: {
             show: false
-        },
-        roamController: {
-            show: false,
-            x: "right",
-            mapTypeControl: {
-                china: true
-            }
         },
         series: [
             {
                 name: "人数",
                 type: "map",
                 mapType: "china",
-                roam: true,
+                roam: 'move',
                 mapValueCalculation: "sum",
-                scaleLimit:{
-                    max: 1,
-                    min: 1
-                },
+                zoom:1,
+                selectedMode: false,
+                showLegendSymbol: false,
                 label:{
                     normal:{
                         textStyle:{
@@ -71,18 +65,12 @@ if(document.getElementById('map_china')) {
                     }
                 },
                 itemStyle: {
-                        normal: {
-                        areaColor: '#323c48',
-                        borderColor: '#f7f7f7',
-                        // borderColor: 'rgba(0, 0, 0, 0.1)',
-                        label: {
-                            show: true
-                        }
+                    normal: {
+                        areaColor: '#EEEEEE',
+                        borderColor: '#FFFFFF'
                     },
                     emphasis: {
-                        label: {
-                            show: true
-                        }
+                        areaColor: '#E5F39B'
                     }
                 },
                 data: [

@@ -30,7 +30,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">度量衡图表演示库</a>
+      <!-- <a class="navbar-brand" href="index.php">度量衡图表演示库</a> -->
+      <a href="index.php" title="度量衡图表演示库"><div class=" " id="line_logo"></div></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,7 +45,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 提建议</a></li>
-        <li id="wise-view"><a data-toggle="tooltip" title="手机预览 <img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机</a></li>
+        <li id="wise-view"><a data-toggle="tooltip" title="手机预览 <img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机版</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -94,5 +95,37 @@
     </div><!-- /.modal -->
 </div>
 
+<?php
 
+    $charts_line_name = array(
+        array("line_base_area","线性面积图表"),
+        array("line_base","线性基础图表"),
+        array("line_broken","折线图表"),
+        array("line_gradient_area","线性极简面积图表"),
+        array("line_multi_y","多Y轴线性图表")
+    );
+
+
+    $charts_bar_name = array(
+        array("bar_v_base","基础柱形图"),
+        array("bar_v_mult","对比柱形图"),
+        array("bar_h_base","基础条形图"),
+        array("bar_h_stack","条形叠加图"),
+        array("bar_h_negative","正负条形图")
+    );
+
+    $charts_pie_name = array(
+        array("pie_base","基础饼图"),
+        array("pie_ring","基础环形图"),
+        array("pie_ring_center","环形文字图"),
+        array("pie_rose","玫瑰图"),
+        array("pie_nest","环形嵌套图")
+    );
+
+    $charts_map_name = array(
+        array("map_china","中国地图"),
+        array("map_china","中国地图")
+    );
+
+?>
 

@@ -4,7 +4,7 @@
     $modal_title = '环形/饼形图表配置文件';
     $option_js = 'charts_pie.js';
 
-    $charts_pie_name = array("pie_base","pie_ring","pie_ring_center","pie_rose","pie_nest");
+
 ?>
 
 <?php include 'header.php'; ?>
@@ -22,50 +22,65 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_pie_name[0] ?>"></div>
+                    <div id="<?php echo $charts_pie_name[0][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_pie/<?php echo $charts_pie_name[0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_pie_name[0][1] ?>: </strong></li>
+                      <li><a href="lite_pie/<?php echo $charts_pie_name[0][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_pie_name[1] ?>"></div>
+                    <div id="<?php echo $charts_pie_name[1][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_pie/<?php echo $charts_pie_name[1] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_pie_name[1][1] ?>: </strong></li>
+                      <li><a href="lite_pie/<?php echo $charts_pie_name[1][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_pie_name[2] ?>"></div>
+                    <div id="<?php echo $charts_pie_name[2][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_pie/<?php echo $charts_pie_name[2] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_pie_name[2][1] ?>: </strong></li>
+                      <li><a href="lite_pie/<?php echo $charts_pie_name[2][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_pie_name[3] ?>"></div>
+                    <div id="<?php echo $charts_pie_name[3][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_pie/<?php echo $charts_pie_name[3] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_pie_name[3][1] ?>: </strong></li>
+                      <li><a href="lite_pie/<?php echo $charts_pie_name[3][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_pie_name[4] ?>"></div>
+                    <div id="<?php echo $charts_pie_name[4][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_pie/<?php echo $charts_pie_name[4] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_pie_name[4][1] ?>: </strong></li>
+                      <li><a href="lite_pie/<?php echo $charts_pie_name[4][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -28,6 +28,13 @@ header {
 	box-shadow: 0 1px 10px rgba(57, 103, 187, 0.5);
 }
 
+#line_logo {
+	float: left;
+	height: 50px;
+	width: 200px;
+	margin-right: 20px;
+}
+
 #title {
 	font-size: 18px;
 	text-align: left;
@@ -45,6 +52,11 @@ header {
 }
 
 
+#hero_time {
+	background: #FFFFFF;
+}
+
+
 .panel-body {
     padding: 5px 0px;
 }
@@ -53,6 +65,7 @@ header {
 	margin-bottom: 0;
 }
 
+#bar_h_negative,
 #bar_v_base,
 #bar_v_mult,
 #bar_h_base,
@@ -69,8 +82,7 @@ header {
 	height: 400px;
 }
 
-#line_gradient_area_three,
-#line_gradient_area_two,
+#line_multi_y,
 #line_gradient_area,
 #line_broken,
 #line_base_area,

@@ -4,9 +4,6 @@
     $modal_title = '线性图表配置文件';
     $option_js = 'charts_line.js';
 
-    $charts_line_name = array("line_base_area","line_base","line_broken","line_gradient_area");
-
-
 ?>
 
 
@@ -24,11 +21,12 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[0] ?>"></div>
+                    <div id="<?php echo $charts_line_name[0][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
                     <ul class="list-inline">
-                      <li><a href="lite_line/<?php echo $charts_line_name[0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><strong><?php echo $charts_line_name[0][1] ?></strong></li>
+                      <li><a href="lite_line/<?php echo $charts_line_name[0][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
                       <li><a href="https://codepen.io/thirtyjin/pen/BwVzbJ" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
                     </ul>
                 </div>
@@ -37,11 +35,26 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[1] ?>"></div>
+                    <div id="<?php echo $charts_line_name[1][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
                     <ul class="list-inline">
-                      <li><a href="lite_line/<?php echo $charts_line_name[1] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><strong><?php echo $charts_line_name[1][1] ?></strong></li>
+                      <li><a href="lite_line/<?php echo $charts_line_name[1][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><a href="https://codepen.io/thirtyjin/pen/GMdYEV/" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="<?php echo $charts_line_name[4][0] ?>"></div>
+                </div>
+                <div class="panel-footer">
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_line_name[4][1] ?></strong></li>
+                      <li><a href="lite_line/<?php echo $charts_line_name[4][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
                       <li><a href="https://codepen.io/thirtyjin/pen/GMdYEV/" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
                     </ul>
                 </div>
@@ -50,23 +63,30 @@
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[2] ?>"></div>
+                    <div id="<?php echo $charts_line_name[2][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_line/<?php echo $charts_line_name[2] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_line_name[2][1] ?></strong></li>
+                      <li><a href="lite_line/<?php echo $charts_line_name[2][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[3] ?>"></div>
+                    <div id="<?php echo $charts_line_name[3][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <a href="lite_line/<?php echo $charts_line_name[3] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a>
+                    <ul class="list-inline">
+                      <li><strong><?php echo $charts_line_name[3][1] ?></strong></li>
+                      <li><a href="lite_line/<?php echo $charts_line_name[3][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

@@ -72,6 +72,18 @@ if(document.getElementById('bar_v_base')) {
                 type: "bar",
                 // barWidth: 40,
                 barMaxWidth: 40,
+                label: {
+                    normal:{
+                        show: false
+                    },
+                    emphasis: {
+                        show: true,
+                        position: 'top',
+                        color: '#333333',
+                        fontSize: '14',
+                        distance: 10
+                    }
+                },
                 itemStyle: {
                     normal: {
                         color: "rgb(57, 152, 252)"
@@ -396,6 +408,73 @@ if(document.getElementById('bar_h_stack')) {
 }
 
 
+if(document.getElementById('bar_h_negative')) {
+    var BarHNegative   = echarts.init(document.getElementById('bar_h_negative'),themename);
+    var bar_h_negative = {
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                    type : 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid:{
+                right:50
+            },
+            xAxis : [
+                {
+                    type : 'value',
+                    axisLabel: {
+                        inside:false,
+                        margin:10
+                    }
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'category',
+                    axisLabel: {
+                        inside:false,
+                        align: "right",
+                        margin: 10,
+                        showMaxLabel: true,
+                    },
+                    boundaryGap: true,
+                    axisTick : {show: false},
+                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                }
+            ],
+            series : [
+                {
+                    name:'收入',
+                    type:'bar',
+                    stack: '总量',
+                    barMaxWidth: 20,
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideLeft'
+                        }
+                    },
+                    data:[320, 302, 341, 374, 390, 450, 420]
+                },
+                {
+                    name:'支出',
+                    type:'bar',
+                    stack: '总量',
+                    barMaxWidth: 20,
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'insideRight'
+                        }
+                    },
+                    data:[-220, -132, -401, -234, -390, -230, -210]
+                }
+            ]
+        };
+
+    BarHNegative.setOption(bar_h_negative);
+}
 
 
 
