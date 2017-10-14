@@ -1,5 +1,5 @@
 # dux_charts
-度量衡数据可视化图表库
+Baidu ECOM Design 数据可视化图表库
 
 
 ### 视觉设计师教程：
