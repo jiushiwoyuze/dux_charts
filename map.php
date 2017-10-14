@@ -26,9 +26,10 @@
                     <div id="<?php echo $charts_map_name[0][0] ?>"></div>
                 </div>
                 <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_map_name[0][1] ?>: </strong></li>
-                      <li><a href="lite_map/<?php echo $charts_map_name[0][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                    <ul class="list-inline"  id="map_one">
+                      <li><strong>图表名称：</strong></li>
+                      <li><a href="#" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
+                      <li><a href="#" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
                     </ul>
                 </div>
             </div>

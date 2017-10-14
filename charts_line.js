@@ -166,7 +166,7 @@ if(document.getElementById('line_base_area')) {
     LineBaseArea.setOption(line_base_area);
 }
 //
-// Chart 3
+// Chart 3 折线图表
 //
 if(document.getElementById('line_broken')) {
     var LineBroken      = echarts.init(document.getElementById('line_broken'),themename);
@@ -248,7 +248,7 @@ if(document.getElementById('line_broken')) {
 }
 
 //
-// Chart 4
+// Chart 4 线性极简面积图表
 //
 if(document.getElementById('line_gradient_area')) {
     var LineGradientArea    = echarts.init(document.getElementById('line_gradient_area'),themename);
@@ -324,7 +324,7 @@ if(document.getElementById('line_gradient_area')) {
 
 
 //
-// Chart 5
+// Chart 5 line_multi_y
 //
 if(document.getElementById('line_multi_y') ) {
     var LineMultiY    = echarts.init(document.getElementById('line_multi_y'),themename);
@@ -446,15 +446,6 @@ if(document.getElementById('line_multi_y') ) {
 if(document.getElementById('line_logo')) {
     var LineLogo    = echarts.init(document.getElementById('line_logo'));
     var line_logo  = {
-
-        // Make gradient line here
-        visualMap: [{
-            show: false,
-            type: 'continuous',
-            seriesIndex: 0,
-            min: 0,
-            max: 30
-        }],
         legend:{
             show:false,
         },
@@ -502,14 +493,14 @@ if(document.getElementById('line_logo')) {
                 smooth: true,
                 data: [-50,50,-50,50,-50],
                 //data: [-20,30,-50,30,-20],
-                //silent: true,
+                silent: false,
                 cursor: 'pointer',
                 label:{
                     normal:{
                         show: false
                     }
                 },
-                showSymbol:false,
+                showSymbol:true,
                 itemStyle: {
                     normal :{
                         borderWidth: 1,
@@ -529,14 +520,7 @@ if(document.getElementById('line_logo')) {
                 },
                 areaStyle: {
                     normal: {
-                        color: "rgba(57,152,252,0.50)",
-                        /*color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: 'rgba(255, 255, 255, 0.5)'
-                        }, {
-                            offset: 1,
-                            color: 'rgba(34, 34, 34, 0.1)'
-                        }])*/
+                        opacity:0
                     }
                 }
             },
@@ -573,14 +557,7 @@ if(document.getElementById('line_logo')) {
                 },
                 areaStyle: {
                     normal: {
-                        color: "rgba(91, 196, 159, 0.50)"
-                        /*color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: 'rgba(255, 255, 255, 0.5)'
-                        }, {
-                            offset: 1,
-                            color: 'rgba(34, 34, 34, 0.1)'
-                        }])*/
+                        opacity:0
                     }
                 }
             }

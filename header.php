@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -98,28 +98,28 @@
 <?php
 
     $charts_line_name = array(
-        array("line_base_area","线性面积图表"),
-        array("line_base","线性基础图表"),
-        array("line_broken","折线图表"),
-        array("line_gradient_area","线性极简面积图表"),
-        array("line_multi_y","多Y轴线性图表")
+        array("line_base_area",     "线性面积图表",       "lite_line/line_base_area.php",         "https://codepen.io/thirtyjin/pen/BwVzbJ"),
+        array("line_base",          "线性基础图表",       "lite_line/line_base.php",              "https://codepen.io/thirtyjin/pen/GMdYEV/"),
+        array("line_multi_y",       "多Y轴线性图表",      "lite_line/line_multi_y.php",           "https://codepen.io/thirtyjin/pen/JraqBJ"),
+        array("line_broken",        "折线图表",           "lite_line/line_broken.php",           "https://codepen.io/thirtyjin/pen/YrObJL"),
+        array("line_gradient_area", "线性极简面积图表",    "lite_line/line_gradient_area.php",     "https://codepen.io/thirtyjin/pen/oGPRJE")
     );
 
 
     $charts_bar_name = array(
-        array("bar_v_base","基础柱形图"),
-        array("bar_v_mult","对比柱形图"),
-        array("bar_h_base","基础条形图"),
-        array("bar_h_stack","条形叠加图"),
-        array("bar_h_negative","正负条形图")
+        array("bar_v_base","基础柱形图",       "lite_bar/bar_v_base.php",         "https://codepen.io/thirtyjin/"),
+        array("bar_v_mult","对比柱形图",       "lite_bar/bar_v_mult.php",         "https://codepen.io/thirtyjin/"),
+        array("bar_h_base","基础条形图",       "lite_bar/bar_h_base.php",         "https://codepen.io/thirtyjin/"),
+        array("bar_h_stack","条形叠加图",      "lite_bar/bar_h_stack.php",        "https://codepen.io/thirtyjin/"),
+        array("bar_h_negative","正负条形图",   "lite_bar/bar_h_negative.php",     "https://codepen.io/thirtyjin/")
     );
 
     $charts_pie_name = array(
-        array("pie_base","基础饼图"),
-        array("pie_ring","基础环形图"),
-        array("pie_ring_center","环形文字图"),
-        array("pie_rose","玫瑰图"),
-        array("pie_nest","环形嵌套图")
+        array("pie_base","基础饼图",            "lite_pie/pie_base.php",         "https://codepen.io/thirtyjin/"),
+        array("pie_ring","基础环形图",           "lite_pie/pie_ring.php",         "https://codepen.io/thirtyjin/"),
+        array("pie_ring_center","环形文字图",   "lite_pie/pie_ring_center.php",         "https://codepen.io/thirtyjin/"),
+        array("pie_rose","玫瑰图",             "lite_pie/pie_rose.php",         "https://codepen.io/thirtyjin/"),
+        array("pie_nest","环形嵌套图",           "lite_pie/pie_nest.php",         "https://codepen.io/thirtyjin/")
     );
 
     $charts_map_name = array(

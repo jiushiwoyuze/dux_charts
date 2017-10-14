@@ -19,6 +19,32 @@
 
 
     <div class="row">
+
+
+
+        <?php 
+
+        for ($i=0; $i < 5 ; $i++) { 
+            
+            $chart_width = array(4,4,4,6,6);
+            
+            echo '<div class="col-md-'.$chart_width[$i].'">';
+            echo '<div class="panel panel-default">';
+            echo '<div class="panel-body">';
+            echo '<div id="'.$charts_pie_name[$i][0].'"></div>';
+            echo '</div>';
+            echo '<div class="panel-footer"><ul class="list-inline">';
+            echo '<li><strong>'.$charts_pie_name[$i][1].': </strong></li>';
+            echo '<li><a href="'.$charts_pie_name[$i][2].'" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>';
+            echo '<li><a href="'.$charts_pie_name[$i][3].'" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整 </a></li>';
+            echo '</ul></div>';
+            echo '</div>';
+            echo '</div>';
+        }
+
+        ?>
+
+<!-- 
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -83,7 +109,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 

@@ -18,74 +18,28 @@
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[0][0] ?>"></div>
-                </div>
-                <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_line_name[0][1] ?></strong></li>
-                      <li><a href="lite_line/<?php echo $charts_line_name[0][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
-                      <li><a href="https://codepen.io/thirtyjin/pen/BwVzbJ" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[1][0] ?>"></div>
-                </div>
-                <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_line_name[1][1] ?></strong></li>
-                      <li><a href="lite_line/<?php echo $charts_line_name[1][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
-                      <li><a href="https://codepen.io/thirtyjin/pen/GMdYEV/" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[4][0] ?>"></div>
-                </div>
-                <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_line_name[4][1] ?></strong></li>
-                      <li><a href="lite_line/<?php echo $charts_line_name[4][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
-                      <li><a href="https://codepen.io/thirtyjin/pen/GMdYEV/" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[2][0] ?>"></div>
-                </div>
-                <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_line_name[2][1] ?></strong></li>
-                      <li><a href="lite_line/<?php echo $charts_line_name[2][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="<?php echo $charts_line_name[3][0] ?>"></div>
-                </div>
-                <div class="panel-footer">
-                    <ul class="list-inline">
-                      <li><strong><?php echo $charts_line_name[3][1] ?></strong></li>
-                      <li><a href="lite_line/<?php echo $charts_line_name[3][0] ?>.php" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+        <?php 
+
+        for ($i=0; $i < 5 ; $i++) { 
+
+            $chart_width = array(12,12,12,6,6);
+
+            echo '<div class="col-md-'.$chart_width[$i].'">';
+            echo '<div class="panel panel-default">';
+            echo '<div class="panel-body">';
+            echo '<div id="'.$charts_line_name[$i][0].'"></div>';
+            echo '</div>';
+            echo '<div class="panel-footer"><ul class="list-inline">';
+            echo '<li><strong>'.$charts_line_name[$i][1].': </strong></li>';
+            echo '<li><a href="'.$charts_line_name[$i][2].'" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>';
+            echo '<li><a href="'.$charts_line_name[$i][3].'" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整 </a></li>';
+            echo '</ul></div>';
+            echo '</div>';
+            echo '</div>';
+        }
+
+        ?>
 
     </div>
 </div>

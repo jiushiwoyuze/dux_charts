@@ -57,6 +57,11 @@ header {
 }
 
 
+.page-header {
+	margin: 0px; 
+}
+
+
 .panel-body {
     padding: 5px 0px;
 }
