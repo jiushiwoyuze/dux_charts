@@ -8,5 +8,11 @@
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script src="../main.js"></script>
 
+
+<!-- Piwik Image Tracker-->
+<img src="http://localhost/piwik/piwik.php?idsite=1&rec=1&action_name=tongji" style="border:0" alt="" />
+<!-- End Piwik -->
+
+
 </body>
 </html>

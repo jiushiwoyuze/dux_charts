@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh">
+
+<?php 
+  $site_name = 'Baidu Ecom Design 图表示例库';
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php print $page_title; ?></title>
+    <title><?php echo $page_title." - ".$site_name; ?></title>
     <meta name="description" content="百度商业设计规范库 度量衡图表 示例库">
     <meta name="author" content="ThirtyJin">
 
@@ -17,6 +21,26 @@
     <script type="text/javascript" src="echarts.min.js"></script>
     <script src="china.js"></script>
     <script src="dux-theme.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.192.168.31.139"]);
+  _paq.push(["setDomains", ["*.localhost","*.127.0.0.1","*.192.168.31.139"]]);
+  _paq.push(["enableCrossDomainLinking"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//192.168.31.139/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
 
 </head>
 <body>
@@ -31,20 +55,19 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand" href="index.php">度量衡图表演示库</a> -->
-      <a href="index.php" title="度量衡图表演示库"><div class=" " id="line_logo"></div></a>
+      <a href="index.php" title="度量衡图表演示库"><div class=" " id="line_logo">ECOM 图表库</div></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a href="index.php">首页概览</a></li>
+        <li <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a href="index.php">概览</a></li>
         <li <?php echo ($page == 'line.php') ? 'class="active"' : '';?> ><a href="line.php">线性图</a></li>
         <li <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a href="bar.php">条/柱图</a></li>
         <li <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a href="pie.php">饼/环图</a></li>
         <li <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a href="map.php">地图</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 提建议</a></li>
         <li id="wise-view"><a data-toggle="tooltip" title="手机预览 <img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机版</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助 <span class="caret"></span></a>
@@ -55,14 +78,17 @@
             <li role="separator" class="divider"></li>
             <li><a data-toggle="modal" data-target="#OptionCode" href="#">主题配置文件预览</a></li>
             <li><a href="dux-theme.js" target="_blank">主题配置文件下载</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 给我邮件</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">传送门 <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">传送门 <span class="glyphicon glyphicon-th" aria-hidden="true"></span></a>
               <ul class="dropdown-menu">
-            <li><a href="http://youcanyouup.info/" target="_blank">团队首页</a></li>
-            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">度量衡视觉设计规范 V4</a></li>
-            <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank">给我邮件</a></li>
+            <li><a href="http://youcanyouup.info/" target="_blank"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 团队首页</a></li>
+            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> 视觉规范标注 V4</a></li>
+            <li><a href="http://youcanyouup.info/rp/" target="_blank"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> 交互产出</a></li>
+            <li><a href="http://ecloud.baidu.com/index.html#team/t1802/self" target="_blank"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 企业云</a></li>
           </ul>
         </li>
       </ul>
