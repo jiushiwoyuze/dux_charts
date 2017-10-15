@@ -1,6 +1,6 @@
 <?php
     $page = 'index.php';
-    $page_title = '度量衡 图表演示库';
+    $page_title = '首页概览';
 
 ?>
 
@@ -11,13 +11,12 @@
 <div class="container-fluid">
 
     <div class="jumbotron card_area" id="hero_time">
-      <h2><?php print $page_title; ?></h2>
+      <h2><?php echo $site_name; ?></h2>
         <blockquote>
         <p>这里是百度商业产品设计规范的<mark><strong>图表部分设计展示</strong></mark>。</p>
         <p><mark>视觉设计师：</mark> 直接拷贝标准图表应用于产品视觉设计。</p>
-        <p><mark>交互设计师：</mark> 在原型设计中嵌入真实可交互图表。</p>
+        <p><mark>交互设计师：</mark> 在原型设计中嵌入真实可交互图表页。</p>
         <p><mark>前端工程师：</mark> 可快速查看对应的 Echarts 主题/配置文件。</p>
-        <footer>Thirtyjin 更新日期：20171011</footer>
         </blockquote>
     </div>
 
