@@ -437,6 +437,124 @@ if(document.getElementById('line_multi_y') ) {
 
 
 
+//
+// Chart 6
+//
+if(document.getElementById('line_area_datazoom')) {
+    var LineAreaDataZoom    = echarts.init(document.getElementById('line_area_datazoom'),themename);
+    var line_area_datazoom  = {
+        title: {
+            text: "线性面积图表"
+            // 参见 dux-theme.js
+        },
+        tooltip: {
+            // 参见 dux-theme.js
+        },
+        legend: {
+            data: [{
+                name: "总收入",
+                icon: 'rect'
+        },{
+                name: "访问量",
+                icon: 'rect'
+        }],
+        right: 30
+        },
+        toolbox: {
+            // 参见 dux-theme.js
+        },
+        xAxis: [
+            {
+                data: categoryList[0]
+                // 参见 dux-theme.js
+            }
+        ],
+        yAxis: [
+            {
+                // 参见 dux-theme.js
+            }
+        ],
+        grid: {
+            bottom: 50
+
+        },
+        dataZoom: [{
+            type: 'inside',
+            start: 0,
+            end: 50
+        }, {
+            type: 'slider',
+            start: 0,
+            end: 50,
+            backgroundColor: '#FCFCFC',
+            dataBackground: {
+                areaStyle: {
+                    color: '#eeeeee'
+                }
+            },
+            borderColor: '#E7E7E7',
+            fillerColor: 'rgba(188,188,188,0.3)',
+            handleIcon: 'M9,0 C13.9705627,-9.13077564e-16 18,4.02943725 18,9 L18,17 C18,21.9705627 13.9705627,26 9,26 L9,26 C4.02943725,26 9.49050257e-15,21.9705627 8.8817842e-15,17 L0,9 L0,9 C-6.08718376e-16,4.02943725 4.02943725,9.13077564e-16 9,0 Z M6,10 L6,11 L12,11 L12,10 L6,10 Z M6,13 L6,14 L12,14 L12,13 L6,13 Z M6,16 L6,17 L12,17 L12,16 L6,16 Z',
+            handleSize: '100%',
+            handleStyle: {
+                borderType: 'solid',
+                borderWidth: 1,
+                color : '#ffffff'
+            },
+            bottom: 10,
+        }],
+        series: [
+            {
+                name: "总收入",
+                type: "line",
+                areaStyle: {
+                    normal:{
+                        color: "rgba(57,152,252,0.10)"
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: "rgb(57, 152, 252)",
+                        lineStyle: {
+                            width: 1
+                        }
+                    },
+                    emphasis: {
+                        borderWidth: 1,
+                    }
+                },
+                // 参见 dux-theme.js
+                data: valueList[0]
+            },
+            {
+                name: "访问量",
+                type: "line",
+                areaStyle: {
+                    normal:{
+                        color: "rgba(91, 196, 159, 0.10)"
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: "rgb(91, 196, 159)",
+                        lineStyle: {
+                            width: 1
+                        }
+                    },
+                    emphasis: {
+                        borderWidth: 1,
+                    }
+                },
+                // 参见 dux-theme.js
+                data: valueList[1]
+            }
+        ]
+    }
+    LineAreaDataZoom.setOption(line_area_datazoom);
+}
+
+
+
 
 
 

@@ -9,7 +9,7 @@ var dataOpt = [
                 { value: 1300, name: "博士"}
             ];
 
-
+var colorOrder = ['#60ACFC', '#4EBECD', '#63D5B2', '#A1E497', '#DCEF7A']
 
 
 // 指定图表的配置项和数据
@@ -26,6 +26,7 @@ var pie_base_option = {
     legend: {
         show: false
     },
+    color: colorOrder ,
     series: [
         {
             name: "学位",
@@ -57,6 +58,7 @@ var pie_ring_option = {
     legend: {
         show: false
     },
+    color: colorOrder ,
     series: [
         {
             name: "学位",
@@ -80,6 +82,7 @@ var pie_ring_center_option = {
     legend: {
         show: false
     },
+    color: colorOrder ,
     series: [
         {
             name: "学位",
@@ -121,6 +124,7 @@ var pie_rose_option = {
     legend: {
         show: false
     },
+    color: colorOrder ,
     series: [
         {
             name: "学位",
@@ -145,6 +149,7 @@ var pie_nest_option = {
     legend: {
         show: false
     },
+    color: colorOrder ,
     series: [
         {
             name: "大学升学率",

@@ -2,7 +2,7 @@
 <html lang="zh">
 
 <?php 
-  $site_name = 'Baidu Ecom Design 图表示例库';
+  $site_name = 'Baidu Ecom Design 图表演示库';
 ?>
 <head>
     <meta charset="utf-8">
@@ -22,18 +22,15 @@
     <script src="china.js"></script>
     <script src="dux-theme.js"></script>
 
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.192.168.31.139"]);
-  _paq.push(["setDomains", ["*.localhost","*.127.0.0.1","*.192.168.31.139"]]);
-  _paq.push(["enableCrossDomainLinking"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//192.168.31.139/piwik/";
+    var u="//youcanyouup.info/piwik/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -41,6 +38,7 @@
   })();
 </script>
 <!-- End Piwik Code -->
+
 
 </head>
 <body>
@@ -128,24 +126,25 @@
         array("line_base",          "线性基础图表",       "lite_line/line_base.php",              "https://codepen.io/thirtyjin/pen/GMdYEV/"),
         array("line_multi_y",       "多Y轴线性图表",      "lite_line/line_multi_y.php",           "https://codepen.io/thirtyjin/pen/JraqBJ"),
         array("line_broken",        "折线图表",           "lite_line/line_broken.php",           "https://codepen.io/thirtyjin/pen/YrObJL"),
-        array("line_gradient_area", "线性极简面积图表",    "lite_line/line_gradient_area.php",     "https://codepen.io/thirtyjin/pen/oGPRJE")
+        array("line_gradient_area", "线性极简面积图表",    "lite_line/line_gradient_area.php",     "https://codepen.io/thirtyjin/pen/oGPRJE"),
+        array("line_area_datazoom", "线性数据缩放图表",    "lite_line/line_area_datazoom.php",     "#")
     );
 
 
     $charts_bar_name = array(
-        array("bar_v_base","基础柱形图",       "lite_bar/bar_v_base.php",         "https://codepen.io/thirtyjin/"),
-        array("bar_v_mult","对比柱形图",       "lite_bar/bar_v_mult.php",         "https://codepen.io/thirtyjin/"),
-        array("bar_h_base","基础条形图",       "lite_bar/bar_h_base.php",         "https://codepen.io/thirtyjin/"),
-        array("bar_h_stack","条形叠加图",      "lite_bar/bar_h_stack.php",        "https://codepen.io/thirtyjin/"),
-        array("bar_h_negative","正负条形图",   "lite_bar/bar_h_negative.php",     "https://codepen.io/thirtyjin/")
+        array("bar_v_base","基础柱形图",       "lite_bar/bar_v_base.php",         "#"),
+        array("bar_v_mult","对比柱形图",       "lite_bar/bar_v_mult.php",         "#"),
+        array("bar_h_base","基础条形图",       "lite_bar/bar_h_base.php",         "#"),
+        array("bar_h_stack","条形叠加图",      "lite_bar/bar_h_stack.php",        "#"),
+        array("bar_h_negative","正负条形图",   "lite_bar/bar_h_negative.php",     "#")
     );
 
     $charts_pie_name = array(
-        array("pie_base","基础饼图",            "lite_pie/pie_base.php",         "https://codepen.io/thirtyjin/"),
-        array("pie_ring","基础环形图",           "lite_pie/pie_ring.php",         "https://codepen.io/thirtyjin/"),
-        array("pie_ring_center","环形文字图",   "lite_pie/pie_ring_center.php",         "https://codepen.io/thirtyjin/"),
-        array("pie_rose","玫瑰图",             "lite_pie/pie_rose.php",         "https://codepen.io/thirtyjin/"),
-        array("pie_nest","环形嵌套图",           "lite_pie/pie_nest.php",         "https://codepen.io/thirtyjin/")
+        array("pie_base","基础饼图",            "lite_pie/pie_base.php",         "#"),
+        array("pie_ring","基础环形图",           "lite_pie/pie_ring.php",         "#"),
+        array("pie_ring_center","环形文字图",   "lite_pie/pie_ring_center.php",   "#"),
+        array("pie_rose","玫瑰图",             "lite_pie/pie_rose.php",         "#"),
+        array("pie_nest","环形嵌套图",           "lite_pie/pie_nest.php",         "#")
     );
 
     $charts_map_name = array(

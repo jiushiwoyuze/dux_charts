@@ -35,6 +35,8 @@ header {
 	margin-right: 20px;
 }
 
+
+
 #title {
 	font-size: 18px;
 	text-align: left;
@@ -59,9 +61,13 @@ header {
 
 
 .page-header {
-	margin: 0px; 
+	margin: 0px;
 }
 
+/* 位置要放在 page-header 下面 */
+.margintop_header {
+	margin-top: 60px;
+}
 
 .panel-body {
     padding: 5px 0px;
@@ -88,6 +94,7 @@ header {
 	height: 400px;
 }
 
+#line_area_datazoom,
 #line_multi_y,
 #line_gradient_area,
 #line_broken,

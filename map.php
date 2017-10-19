@@ -13,7 +13,7 @@
 
 
 <div class="container-fluid">
-    <div class="page-header">
+    <div class="page-header margintop_header">
         <ul class="list-inline">
             <li><h3><?php echo $page_title; ?></h3></li>
             <li><h3><a href="#" data-toggle="modal" data-target="#myModal"><small class="pull-right" > 配置代码 <span class="glyphicon glyphicon-cog" ></span></small></a></h3></li>

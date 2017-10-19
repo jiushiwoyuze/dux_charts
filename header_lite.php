@@ -17,18 +17,15 @@
     <script type="text/javascript" src="../echarts.min.js"></script>
     <script src="../dux-theme.js"></script>
 
+
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.192.168.31.139"]);
-  _paq.push(["setDomains", ["*.localhost","*.127.0.0.1","*.192.168.31.139"]]);
-  _paq.push(["enableCrossDomainLinking"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//192.168.31.139/piwik/";
+    var u="//youcanyouup.info/piwik/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '1']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
