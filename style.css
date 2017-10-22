@@ -1,18 +1,9 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	/*border: 0;*/
-	/* font-family: inherit; */
+
 	font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, simhei, sans-serif;
-	/*font-size: 100%;*/
 	font-style: inherit;
-	/*font-weight: 900;*/
-	/*margin: 0;*/
 	outline: 0;
-	/*padding: 0;*/
 	vertical-align: baseline;
-	-moz-transition: all 0.2s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
 }
 
 
