@@ -9,7 +9,7 @@
     <meta name="author" content="ThirtyJin">
 
 
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" type="text/css" href="../style.css">
 
 
