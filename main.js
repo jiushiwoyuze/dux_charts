@@ -35,10 +35,13 @@ if(document.getElementById('map_one')) {
 
 
 
+
+
 // 整体窗口有变化时 调用 resize 
 // 一个页面只能有一个 window.onsize
 
 window.onresize = function() {
+
 
 	// Line
     if(document.getElementById('line_base')) {
@@ -52,6 +55,12 @@ window.onresize = function() {
     }
     if(document.getElementById('line_gradient_area')) {
         LineGradientArea.resize();
+    }
+    if(document.getElementById('line_multi_y')) {
+        LineMultiY.resize();
+    }
+    if(document.getElementById('line_area_datazoom')) {
+        LineAreaDataZoom.resize();
     }
 
     // Bar
