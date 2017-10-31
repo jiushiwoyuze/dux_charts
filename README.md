@@ -1,6 +1,6 @@
-# dux_charts
-Baidu ECOM Design 数据可视化图表库
+# ONE 数据可视化图表库
 
+[百度内网查看地址](http://youcanyouup.info/dux_charts/)
 
 ### 视觉设计师教程：
 1. 挑选一个适合的图表；
