@@ -568,27 +568,14 @@ if(document.getElementById('line_logo')) {
             show:false,
         },
         title: {
-            //show:false,
-            text: "图表演示库",
-            link: 'index.php',
-            textStyle:{
-                fontSize:18,
-                fontFamily: 'PingFang SC',
-                fontWeight: 'lighter',
-                color: '#ffffff',
-                verticalAlign: 'middle',
-                lineHeight: 50,
-                align:'center',
-                height:50,
-                width: 150,
-            },
-            top: 12,
-            left: 100,
+            show:false,
+            link: 'index.php'
         },
         grid:{
+            show: false,
             top: 10,
             left:0,
-            right:50,
+            right:0,
             bottom:10
         },
         tooltip: {
@@ -598,7 +585,7 @@ if(document.getElementById('line_logo')) {
             {
                 type: "category",
                 show:false,
-                data: [8,2,16,8,20,18,30]
+                data: [8,2,16,8,20]
             }
         ],
         yAxis: {
@@ -629,9 +616,9 @@ if(document.getElementById('line_logo')) {
                 lineStyle:{
                     normal:{
                         width: 1,
-                        shadowBlur: 5,
-                        shadowColor: '#ffffff',
-                        shadowOffsetY: 2,
+                        //shadowBlur: 5,
+                        //shadowColor: '#ffffff',
+                        //shadowOffsetY: 2,
                         //color: "rgba(255, 255, 255, 1)"
                         color: "rgba(57,152,252,1)",
                     }
@@ -666,9 +653,9 @@ if(document.getElementById('line_logo')) {
                 lineStyle:{
                     normal:{
                         width: 1,
-                        shadowBlur: 5,
-                        shadowColor: '#ffffff',
-                        shadowOffsetY: 2,
+                        //shadowBlur: 5,
+                        //shadowColor: '#ffffff',
+                        //shadowOffsetY: 2,
                         //color: "rgba(255, 255, 255, 1)"
                         color: "rgba(91, 196, 159, 1)"
                     }
