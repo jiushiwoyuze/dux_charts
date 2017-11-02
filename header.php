@@ -53,7 +53,7 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a class="navbar-brand" href="index.php">度量衡图表演示库</a> -->
-      <div id="line_logo">LOGO</div><a href="index.php" class="navbar-brand" title="数据图表库"> ONE 图表库</a>
+      <div id="line_logo">LOGO</div><a href="index.php" class="navbar-brand" title="数据图表库"> ONE 图表库 <sup>Beta</sup></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
