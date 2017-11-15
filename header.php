@@ -87,16 +87,12 @@
             <li><a href="http://youcanyouup.info/" target="_blank"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页 <mark>团队百科</mark></a></li>
             <li><a href="http://ecloud.baidu.com/index.html#team/t1802/self" target="_blank"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 视觉产出 <mark>企业云</mark></a></li>
             <li><a href="http://youcanyouup.info/rp/" target="_blank"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> 交互产出  <mark>RP 目录</mark></a></li>
-            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> 视觉规范标注 V4</a></li>
-            <li><a href="http://youcanyouup.info/dux_icons/" target="_blank"><span class="glyphicon glyphicon-queen" aria-hidden="true"></span> 图标库</a></li>
-            <li><a href="http://youcanyouup.info/dux_charts/" target="_blank"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 数据图表库</a></li>
+            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> ONE 视觉标注</a></li>
+            <li><a href="http://youcanyouup.info/dux_icons/" target="_blank"><span class="glyphicon glyphicon-queen" aria-hidden="true"></span>  ONE 图标库</a></li>
+            <li><a href="http://youcanyouup.info/dux_charts/" target="_blank"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> ONE 数据图表库</a></li>
+            <li><a href="http://youcanyouup.info/dux_axure_libs/" target="_blank"><span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> ONE 交互控件库</a></li>
+            <li><a href="http://youcanyouup.info/dux/" target="_blank"><span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> ONE 设计规范</a></li>
             
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">外网开源</li>
-            <li><a href="https://thirtyjin.github.io/dux/" target="_blank"><span class="glyphicon glyphicon-king" aria-hidden="true"></span> ONE DESIGN 规范</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_axure_library/" target="_blank"><span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> 交互控件库</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_icons/" target="_blank"><span class="glyphicon glyphicon-queen" aria-hidden="true"></span> 图标库</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_charts/" target="_blank"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 数据图表库</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 提点意见</a></li>
           </ul>
