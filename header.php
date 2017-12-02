@@ -2,25 +2,27 @@
 <html lang="zh">
 
 <?php 
-  $site_name = 'Baidu Ecom Design 图表演示库';
+  $site_name = 'Baidu ONE DESIGN 数据图表';
 ?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title." - ".$site_name; ?></title>
-    <meta name="description" content="百度商业设计规范库 度量衡图表 示例库">
+    <meta name="description" content="百度商业设计规范库 ONE DESIGN 数据图表库">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="author" content="ThirtyJin">
 
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
     <!-- 引入 echarts.js -->
-    <script type="text/javascript" src="echarts.min.js"></script>
-    <script src="china.js"></script>
-    <script src="dux-theme.js"></script>
+    <script type="text/javascript" src="assets/js/echarts.min.js"></script>
+    <script type="text/javascript" src="assets/js/china.js"></script>
+    <script type="text/javascript" src="assets/js/dux-theme.js"></script>
 
 
 <!-- Piwik -->
@@ -42,85 +44,78 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <a class="navbar-brand" href="index.php">度量衡图表演示库</a> -->
-      <div id="line_logo">LOGO</div><a href="index.php" class="navbar-brand" title="数据图表库"> ONE 图表库 <sup>Beta</sup></a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <a class="navbar-brand" href="./">ONE 图表库<sup>Beta</sup></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a href="index.php">概览</a></li>
-        <li <?php echo ($page == 'line.php') ? 'class="active"' : '';?> ><a href="line.php">线性图</a></li>
-        <li <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a href="bar.php">条/柱图</a></li>
-        <li <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a href="pie.php">饼/环图</a></li>
-        <li <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a href="map.php">地图</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li id="wise-view"><a data-toggle="tooltip" title="手机预览 <img src='img/qrcode.png' style='height:150px;' />"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 手机版</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助 <span class="caret"></span></a>
+        <li class="nav-item" <?php echo ($page == 'index.php') ? 'class="active"' : '';?> ><a class="nav-link" href="index.php">首页</a></li>
+        <li class="nav-item" <?php echo ($page == 'line.php') ? 'class="active"' : '';?> ><a class="nav-link" href="line.php">线性图</a></li>
+        <li class="nav-item" <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a class="nav-link" href="bar.php">条/柱图</a></li>
+        <li class="nav-item" <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a class="nav-link" href="pie.php">饼/环图</a></li>
+        <li class="nav-item" <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a class="nav-link" href="map.php">地图</a></li>
+
+    </ul>
+
+    <ul class="navbar-nav">
+        <li class="nav-item" id="wise-view"><a class="nav-link" data-toggle="tooltip" title="手机预览 <img src='assets/img/qrcode.png' style='height:150px;' />">手机版</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助</a>
           <ul class="dropdown-menu">
-            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">视觉设计师教程</a></li>
-            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">交互设计师教程</a></li>
-            <li><a href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">开发工程师教程</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a data-toggle="modal" data-target="#OptionCode" href="#">主题配置文件预览</a></li>
-            <li><a href="dux-theme.js" target="_blank">主题配置文件下载</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 给我邮件</a></li>
+            <li><a class="dropdown-item" href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">视觉设计师教程</a></li>
+            <li><a class="dropdown-item" href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">交互设计师教程</a></li>
+            <li><a class="dropdown-item" href="https://github.com/thirtyjin/dux_charts/blob/master/README.md" target="_blank">开发工程师教程</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" data-toggle="modal" data-target="#OptionCode" href="#">主题配置文件预览</a></li>
+            <li><a class="dropdown-item" href="assets/js/dux-theme.js" target="_blank">主题配置文件下载</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 给我邮件</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">传送门 <span class="glyphicon glyphicon-th" aria-hidden="true"></span></a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-header">百度内网</li>
-            <li><a href="http://youcanyouup.info/" target="_blank"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页 <mark>团队百科</mark></a></li>
-            <li><a href="http://ecloud.baidu.com/index.html#team/t1802/self" target="_blank"><span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> 视觉产出 <mark>企业云</mark></a></li>
-            <li><a href="http://youcanyouup.info/rp/" target="_blank"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> 交互产出  <mark>RP 目录</mark></a></li>
-            <li><a href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> 视觉规范标注 V4</a></li>
-            <li><a href="http://youcanyouup.info/dux_icons/" target="_blank"><span class="glyphicon glyphicon-queen" aria-hidden="true"></span> 图标库</a></li>
-            <li><a href="http://youcanyouup.info/dux_charts/" target="_blank"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 数据图表库</a></li>
-            
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">外网开源</li>
-            <li><a href="https://thirtyjin.github.io/dux/" target="_blank"><span class="glyphicon glyphicon-king" aria-hidden="true"></span> ONE DESIGN 规范</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_axure_library/" target="_blank"><span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> 交互控件库</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_icons/" target="_blank"><span class="glyphicon glyphicon-queen" aria-hidden="true"></span> 图标库</a></li>
-            <li><a href="https://thirtyjin.github.io/dux_charts/" target="_blank"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> 数据图表库</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 提点意见</a></li>
-          </ul>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              传送门
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <h6 class="dropdown-header">百度内网</h6>
+              <a class="dropdown-item" href="http://youcanyouup.info/" target="_blank">首页 <mark>团队百科</mark></a>
+              <a class="dropdown-item" href="http://ecloud.baidu.com/index.html#team/t1802/self" target="_blank">视觉产出 <mark>企业云</mark></a>
+              <a class="dropdown-item" href="http://youcanyouup.info/rp/" target="_blank">交互产出  <mark>RP 目录</mark></a>
+              <a class="dropdown-item" href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">ONE 视觉标注</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_icons/" target="_blank">ONE 图标库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_charts/" target="_blank">ONE 数据图表库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_axure_libs/" target="_blank">ONE 交互设计库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux/" target="_blank">ONE 设计规范</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank">提点意见</a>
+
+            </div>
         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </ul>
+  </div>
 </nav>
+
 
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="OptionCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
                 <h4 class="modal-title" id="myModalLabel">
                     <?php echo '图表通用主题配置文件预览' ?>
                 </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
             </div>
             <div class="modal-body">
                 <?php
-                show_source('dux-theme.js');
+                show_source('assets/js/dux-theme.js');
                 ?>
             </div>
             <div class="modal-footer">

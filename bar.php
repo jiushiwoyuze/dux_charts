@@ -2,7 +2,7 @@
     $page = 'bar.php';
     $page_title = '条形/柱状图表';
     $modal_title = '条形/柱状图表配置文件';
-    $option_js = 'charts_bar.js';
+    $option_js = 'assets/js/charts_bar.js';
 
     
 ?>
@@ -10,12 +10,11 @@
 <?php include 'header.php'; ?>
 
 
-<div class="container-fluid">
-    <div class="page-header margintop_header">
-        
+<div class="container">
+    <div class="mt-4">
         <ul class="list-inline">
-            <li><h3><?php echo $page_title; ?></h3></li>
-            <li><h3><a href="#" data-toggle="modal" data-target="#myModal"><small class="pull-right"> 配置代码 <span class="glyphicon glyphicon-cog" ></span></small></a></h3></li>
+            <li class="list-inline-item"><h4 class="card-title"><?php echo $page_title; ?></h4></li>
+            <li class="list-inline-item"><h5 class="card-title"><a href="#" data-toggle="modal" data-target="#myModal"><small class="pull-right"> 配置代码 </small></a></h5></li>
         </ul>
     </div>
 
@@ -28,17 +27,17 @@
             $chart_width = array(12,12,6,6,6);
             
             echo '<div class="col-md-'.$chart_width[$i].'">';
-            echo '<div class="panel panel-default">';
-            echo '<div class="panel-body">';
+            echo '<div class="card card-default">';
+            echo '<div class="card-body">';
             echo '<div id="'.$charts_bar_name[$i][0].'"></div>';
             echo '</div>';
-            echo '<div class="panel-footer"><ul class="list-inline">';
-            echo '<li><strong>'.$charts_bar_name[$i][1].': </strong></li>';
-            echo '<li><a href="'.$charts_bar_name[$i][2].'" target="_blank"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> 交互引用 </a></li>';
+            echo '<div class="card-footer">';
+            echo '<strong>'.$charts_bar_name[$i][1].': </strong>';
+            echo '<a class="card-link" href="'.$charts_bar_name[$i][2].'" target="_blank"> 交互引用 </a>';
             if ( $charts_bar_name[$i][3] !== "#") {
-            echo '<li><a href="'.$charts_bar_name[$i][3].'" target="_blank"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑调整 </a></li>';
+            echo '<a class="card-link" href="'.$charts_bar_name[$i][3].'" target="_blank"> 编辑调整 </a>';
             }
-            echo '</ul></div>';
+            echo '</div>';
             echo '</div>';
             echo '</div>';
         }

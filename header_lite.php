@@ -9,13 +9,12 @@
     <meta name="author" content="ThirtyJin">
 
 
-    <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
 
     <!-- 引入 echarts.js -->
-    <script type="text/javascript" src="../echarts.min.js"></script>
-    <script src="../dux-theme.js"></script>
+    <script type="text/javascript" src="../assets/js/echarts.min.js"></script>
+    <script src="../assets/js/dux-theme.js"></script>
 
 
 <!-- Piwik -->
@@ -35,6 +34,6 @@
 <!-- End Piwik Code -->
 
 </head>
-<body style="background: #ffffff;">
+<body style="background: #ffffff; margin: 0;">
 
 
