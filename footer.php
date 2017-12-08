@@ -41,6 +41,7 @@
 <script type="text/javascript" src="assets/js/charts_bar.js"></script>
 <script type="text/javascript" src="assets/js/charts_pie.js"></script>
 <script type="text/javascript" src="assets/js/charts_map.js"></script>
+<script type="text/javascript" src="assets/js/charts_graph.js"></script>
 
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>

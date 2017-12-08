@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-<?php 
+<?php
   $site_name = 'Baidu ONE DESIGN 数据图表';
 ?>
 <head>
@@ -159,5 +159,15 @@
         array("map_china","中国地图")
     );
 
-?>
+    $charts_portrait_name = array(
+        array("pie_base","性别比例",           "lite_pie/pie_ring.php",         "#"),
+        array("pie_ring","年龄占比",           "lite_pie/pie_ring.php",         "#"),
+        array("pie_ring_center","学历分布",           "lite_pie/pie_ring.php",         "#"),
+        array("map_china","地域分布"),
+        array("pie_rose","兴趣爱好",             "lite_pie/pie_rose.php",         "#"),
+        array("graph_place_option","场所分布",             "lite_pie/pie_rose.php",         "#"),
+        array("bar_v_base","人生阶段",       "lite_bar/bar_v_base.php",         "#"),
+        array("bar_h_base","财产状况",       "lite_bar/bar_v_base.php",         "#")
+    );
 
+?>
