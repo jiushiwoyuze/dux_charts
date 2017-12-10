@@ -119,7 +119,7 @@ a {
 #pie_nest {
 	height: 360px;
 }
-
+#graph_interests_option,
 #graph_place_option,
 #line_area_datazoom,
 #line_multi_y,
@@ -134,4 +134,24 @@ a {
 #base_interest,
 #map_china {
 	height: 400px;
+}
+
+
+
+/* 人群画像 DEMO */
+
+#app_option,
+#wealth_option,
+#stage_option{
+	height: 260px;
+}
+#gender_option,
+#age_option,
+#education_option{
+	height: 300px;
+}
+#region_option,
+#interests_option,
+#place_option {
+	height: 360px;
 }

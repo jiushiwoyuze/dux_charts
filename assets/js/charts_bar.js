@@ -14,7 +14,7 @@ var xAxisData = [
                 ['首次', '1~5 天', '6~10 天', '11~15 天', '16~20 天', '21~25 天', '26~30 天'],
                 ['0~10 分钟', '10~30 分钟', '31~60 分钟', '61~90 分钟', '91~120 分钟'],
                 ['07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '11:00', '12:00', '13:00']
-            ];          
+            ];
 
 
 
@@ -203,7 +203,7 @@ if(document.getElementById('bar_h_base')) {
         title: {
             text: "条形图表"
         },
-        
+
         tooltip: {
         },
         legend: {
@@ -273,7 +273,7 @@ if(document.getElementById('bar_h_stack')) {
         title: {
             text: "条形堆叠图表"
         },
-        
+
         tooltip: {
         },
         legend: {
@@ -475,14 +475,3 @@ if(document.getElementById('bar_h_negative')) {
 
     BarHNegative.setOption(bar_h_negative);
 }
-
-
-
-
-
-
-
-
-
-
-
