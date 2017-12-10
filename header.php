@@ -25,6 +25,23 @@
     <script type="text/javascript" src="assets/js/dux-theme.js"></script>
 
 
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//youcanyouup.info/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -65,11 +82,18 @@
               传送门
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <h6 class="dropdown-header">THIRTYJIN</h6>
-              <a class="dropdown-item" href="http://thirtyjin.com/" target="_blank">博客</a>
-              <a class="dropdown-item" href="http://thirtyjin.com/dux_icons/" target="_blank">ONE 图标库</a>
-              <a class="dropdown-item" href="http://thirtyjin.com/dux_charts/" target="_blank">ONE 数据图表库</a>
-              <a class="dropdown-item" href="http://thirtyjin.com/dux_libs/" target="_blank">ONE 交互设计库</a>
+              <h6 class="dropdown-header">百度内网</h6>
+              <a class="dropdown-item" href="http://youcanyouup.info/" target="_blank">首页 <mark>团队百科</mark></a>
+              <a class="dropdown-item" href="http://ecloud.baidu.com/index.html#team/t1802/self" target="_blank">视觉产出 <mark>企业云</mark></a>
+              <a class="dropdown-item" href="http://youcanyouup.info/rp/" target="_blank">交互产出  <mark>RP 目录</mark></a>
+              <a class="dropdown-item" href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">ONE 视觉标注</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_icons/" target="_blank">ONE 图标库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_charts/" target="_blank">ONE 数据图表库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_axure_libs/" target="_blank">ONE 交互设计库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux/" target="_blank">ONE 设计规范</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank">提点意见</a>
+
             </div>
         </li>
     </ul>
