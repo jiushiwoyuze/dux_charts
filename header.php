@@ -20,7 +20,7 @@
 
 
     <!-- 引入 echarts.js -->
-    <script type="text/javascript" src="assets/js/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
     <script type="text/javascript" src="assets/js/china.js"></script>
     <script type="text/javascript" src="assets/js/dux-theme.js"></script>
 
@@ -58,6 +58,7 @@
         <li class="nav-item" <?php echo ($page == 'bar.php') ? 'class="active"' : '';?> ><a class="nav-link" href="bar.php">条/柱图</a></li>
         <li class="nav-item" <?php echo ($page == 'pie.php') ? 'class="active"' : '';?> ><a class="nav-link" href="pie.php">饼/环图</a></li>
         <li class="nav-item" <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a class="nav-link" href="map.php">地图</a></li>
+        <li class="nav-item" <?php echo ($page == 'map.php') ? 'class="active"' : '';?> ><a class="nav-link" href="portrait.php">人群画像 DEMO</a></li>
 
     </ul>
 
@@ -159,15 +160,21 @@
         array("map_china","中国地图")
     );
 
+    $charts_graph_name = array(
+        array("graph_interests_option","力引导布局1",             "lite_pie/pie_rose.php",         "#"),
+        array("graph_place_option","力引导布局2",             "lite_pie/pie_rose.php",         "#")
+    );
+
     $charts_portrait_name = array(
-        array("pie_base","性别比例",           "lite_pie/pie_ring.php",         "#"),
-        array("pie_ring","年龄占比",           "lite_pie/pie_ring.php",         "#"),
-        array("pie_ring_center","学历分布",           "lite_pie/pie_ring.php",         "#"),
-        array("map_china","地域分布"),
-        array("pie_rose","兴趣爱好",             "lite_pie/pie_rose.php",         "#"),
-        array("graph_place_option","场所分布",             "lite_pie/pie_rose.php",         "#"),
-        array("bar_v_base","人生阶段",       "lite_bar/bar_v_base.php",         "#"),
-        array("bar_h_base","财产状况",       "lite_bar/bar_v_base.php",         "#")
+        array("age_option","年龄占比",           "lite_pie/pie_ring.php",         "#"),
+        array("gender_option","性别比例",           "lite_pie/pie_ring.php",         "#"),
+        array("education_option","学历分布",           "lite_pie/pie_ring.php",         "#"),
+        array("region_option","地域分布"),
+        array("interests_option","兴趣爱好",             "lite_pie/pie_rose.php",         "#"),
+        array("place_option","场所分布",             "lite_pie/pie_rose.php",         "#"),
+        array("stage_option","人生阶段",       "lite_bar/bar_v_base.php",         "#"),
+        array("wealth_option","财产状况",       "lite_bar/bar_v_base.php",         "#"),
+        array("app_option","APP 偏好",       "lite_bar/bar_v_base.php",         "#")
     );
 
 ?>

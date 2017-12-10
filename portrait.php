@@ -1,8 +1,8 @@
 <?php
     $page = 'bar.php';
     $page_title = '人群画像 Demo';
-    $modal_title = '条形/柱状图表配置文件';
-    $option_js = 'assets/js/charts_bar.js';
+    $modal_title = '人群画像 Demo 配置文件';
+    $option_js = 'assets/js/demo_portrait.js';
 
 
 ?>
@@ -22,9 +22,9 @@
 
         <?php
 
-        for ($i=0; $i < 8 ; $i++) {
+        for ($i=0; $i < 9 ; $i++) {
 
-            $chart_width = array(4,4,4,12,6,6,6,6);
+            $chart_width = array(4,4,4,12,6,6,4,4,4);
 
             echo '<div class="col-md-'.$chart_width[$i].'">';
             echo '<div class="card card-default">';

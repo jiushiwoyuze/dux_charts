@@ -224,7 +224,7 @@
         "graph": {
             "itemStyle": {
                 "normal": {
-                    "borderWidth": 0,
+                    "borderWidth": 1,
                     "borderColor": "#ccc"
                 }
             },
