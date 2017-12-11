@@ -90,7 +90,7 @@
               <a class="dropdown-item" href="http://youcanyouup.info/download/dux_v4_ui/" target="_blank">ONE 视觉标注</a>
               <a class="dropdown-item" href="http://youcanyouup.info/dux_icons/" target="_blank">ONE 图标库</a>
               <a class="dropdown-item" href="http://youcanyouup.info/dux_charts/" target="_blank">ONE 数据图表库</a>
-              <a class="dropdown-item" href="http://youcanyouup.info/dux_axure_libs/" target="_blank">ONE 交互设计库</a>
+              <a class="dropdown-item" href="http://youcanyouup.info/dux_libs/" target="_blank">ONE 设计库</a>
               <a class="dropdown-item" href="http://youcanyouup.info/dux/" target="_blank">ONE 设计规范</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="mailto:jinlei01@baidu.com?subject=找你有点事&body=Hi%20 jinlei" target="_blank">提点意见</a>

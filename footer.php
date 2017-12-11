@@ -24,7 +24,7 @@
 	        <a class="nav-link" href="http://youcanyouup.info/dux_icons/" target="_blank" data-toggle="tooltip" data-placement="top" title="ONE 图标库 - 内网访问" >ONE 标局</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="http://youcanyouup.info/dux_axure_libs/" target="_blank" data-toggle="tooltip" data-placement="top" title="ONE 工具设计库 - 内网访问" >ONE 设计库</a>
+	        <a class="nav-link" href="http://youcanyouup.info/dux_libs/" target="_blank" data-toggle="tooltip" data-placement="top" title="ONE 工具设计库 - 内网访问" >ONE 设计库</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="http://youcanyouup.info/dux/" target="_blank" data-toggle="tooltip" data-placement="top" title="ONE DESIGN - 内网访问" >ONE 设计规范</a>
