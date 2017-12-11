@@ -5,16 +5,21 @@ var themename = 'dux';
 //var colorOrder = ["#60ACFC", "#32D3EB", "#5BC49F", "#FEB64D", "#FF7B7B", "#9287E7", "#00C1E0", "#9CDC82"];
 var colorOrder = ["#60ACFC","#4EBECD","#66D7D2","#AFE39B","#D4EC59","#FB8B89","#00C1E0", "#9CDC82"];
 
+var hotColor = ["#8F95E7","#FEB64D","#FF9595","#DE7FB9","#C37CCA","#FF9F69","#FEC470","#E9668E","#84A4DE","#9287E7"];
+var coolColor = ["#60ACFC","#48BECE","#61D7D3","#32D3EB","#5BC49F","#A1A9EB","#63D5B2","#828CE4","#AEE498","#39B3EA"];
+
 
 
 // 性别比例
 
 var dataGender = [
-    { value: 2600, name: "男性" },
-    { value: 2000, name: "女性"}
+    { value: 2600, name: "女性" },
+    { value: 1600, name: "男性"}
 ];
 
-var svggender = 'data:image/svg+xml;utf8,<svg width="48px" height="46px" viewBox="0 0 48 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="工具中心-定向助手-人群画像" transform="translate(-795.000000, -438.000000)" fill="#FB8B89"><g id="ic_男女比例" transform="translate(795.000000, 438.000000)"><path d="M47.8902082,22.4863322 C48.5409106,24.7951839 45.6527055,25.7484058 44.9534858,23.5251728 L42.116652,13.741806 L41.2148013,13.741806 L46.1863955,30.9283389 L41.508759,30.9283389 L41.508759,43.8453512 C41.508759,46.1827425 38.1781904,46.1827425 38.1781904,43.8453512 L38.1781904,30.9283389 L37.1022484,30.9283389 L37.1022484,43.8453512 C37.1022484,46.1827425 33.6575215,46.1827425 33.6575215,43.8453512 L33.6575215,30.9283389 L29.1054591,30.9283389 L33.9743108,13.741806 L33.1809106,13.741806 L30.3526386,23.5251728 C29.6362952,25.6998885 26.7338203,24.7951839 27.4102082,22.4777703 L30.5752473,11.8753177 C30.9405538,10.6481159 32.4617133,8.55616499 35.1130399,8.45627648 L40.2045003,8.45627648 C42.7673543,8.55331104 44.2970756,10.6652397 44.7223153,11.8667559 L47.8902082,22.4863322 Z M37.6416464,7.58867336 C35.4612227,7.58867336 33.7003309,5.8877146 33.7003309,3.7929097 C33.7003309,1.70095875 35.4612227,0 37.6416464,0 C39.82207,0 41.5858158,1.70095875 41.5858158,3.7929097 C41.5858158,5.89056856 39.82207,7.58867336 37.6416464,7.58867336 Z M9.37854716,7.59152731 C7.08396522,7.59152731 5.2260388,5.89342252 5.2260388,3.79576366 C5.2260388,1.70095875 7.08396522,0 9.37854716,0 C11.6702751,0 13.5310555,1.70095875 13.5310555,3.79576366 C13.5310555,5.90198439 11.6702751,7.6057971 9.37854716,7.59152731 Z M13.5367634,8.45056856 C16.664701,8.45056856 18.7224045,10.982029 18.7138426,13.3736455 L18.7138426,24.9321739 C18.7138426,27.1753846 15.1578114,27.1753846 15.1578114,24.9321739 L15.1578114,14.2498105 L14.6012896,14.2498105 L14.6012896,43.3116611 C14.6012896,46.1941583 10.0121258,46.4995318 9.81805663,43.3259309 L9.81805663,26.5646377 L8.92762185,26.5646377 L8.92762185,43.3116611 C8.81917146,46.3111706 4.14438885,46.4082051 4.14438885,43.3116611 L4.14438885,14.2498105 L3.47656276,14.2498105 L3.47656276,24.9350279 C3.47656276,27.1782386 0.0289819398,27.1782386 0.0289819398,24.9350279 L0.0289819398,13.3764994 C0.0289819398,10.9763211 2.07812352,8.45056856 5.21176901,8.45056856 L13.5367634,8.45056856 Z" id="Combined-Shape"></path></g></g></g></svg> ';
+
+var svggender = 'data:image/svg+xml;utf8,<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M84,0 C113.990165,0 141.701837,15.9994184 156.701917,41.9722406 C171.701996,67.9450628 171.701996,99.9438995 156.701917,125.916722 C150.81581,136.099987 142.851077,144.944137 133.337369,151.859564 L115.719022,127.605605 C131.318705,116.2731 139.683173,97.4855254 137.664508,78.3082089 C135.645843,59.1308923 123.55384,42.4918969 105.945486,34.6470853 C99.0400529,31.569121 91.5649967,29.9801718 84,29.9801718 L84,0 Z" id="path-1"></path> <path d="M133.337369,151.859564 C109.073417,169.487905 77.2544613,172.835691 49.8525843,160.633761 C22.4507072,148.431831 3.65313946,122.548949 0.515214805,92.7186781 C-2.62270985,62.8884071 10.3986781,33.6577396 34.6626305,16.0293985 C49.0031461,5.60629213 66.271725,0 84,0 L84,29.9801718 C64.7227495,29.9801718 46.904534,40.2633708 37.2609121,56.9623265 C27.6172902,73.6612822 27.6172902,94.2276801 37.2609121,110.926636 C46.904534,127.625592 64.7227495,137.90879 84,137.90879 C95.3924653,137.90879 106.495122,134.301176 115.719022,127.605605 L133.337369,151.859564 Z" id="path-2"></path> </defs> <g id="工具中心-定向助手-人群画像" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-794.000000, -436.000000)"> <rect id="Rectangle-6" fill="#F2F4F8" x="0" y="105" width="1440" height="2074"></rect> <rect id="Rectangle-6-Copy-6" fill="#FFFFFF" x="221" y="282" width="1200" height="320"></rect> <g id="Variable-segments-circle" transform="translate(734.000000, 376.000000)"> <path d="M84,0 C113.990165,0 141.701837,15.9994184 156.701917,41.9722406 C171.701996,67.9450628 171.701996,99.9438995 156.701917,125.916722 C141.701837,151.889544 113.990165,167.888962 84,167.888962 C54.0098348,167.888962 26.2981626,151.889544 11.2980833,125.916722 C-3.70199603,99.9438995 -3.70199603,67.9450628 11.2980833,41.9722406 C26.2981626,15.9994184 54.0098348,0 84,0 L84,29.9801718 C64.7227495,29.9801718 46.904534,40.2633708 37.2609121,56.9623265 C27.6172902,73.6612822 27.6172902,94.2276801 37.2609121,110.926636 C46.904534,127.625592 64.7227495,137.90879 84,137.90879 C103.27725,137.90879 121.095466,127.625592 130.739088,110.926636 C140.38271,94.2276801 140.38271,73.6612822 130.739088,56.9623265 C121.095466,40.2633708 103.27725,29.9801718 84,29.9801718 L84,0 Z" id="Base-plate" fill-opacity="0.002" fill="#455A64"></path> <g id="Segment-40"> <use fill="#FB8B89" fill-rule="evenodd" xlink:href="#path-1"></use> <path stroke="#FFFFFF" stroke-width="1" d="M84.5,0.501491524 L84.5,29.4824641 C91.9654593,29.5509313 99.3327632,31.1521706 106.148964,34.1903614 C123.922596,42.1088072 136.124652,58.9033329 138.16176,78.2558665 C140.181609,97.4444252 131.901517,116.247242 116.416062,127.71442 L133.447073,151.159833 C142.725451,144.330133 150.501075,135.645359 156.268938,125.666663 C171.179656,99.8485714 171.179656,68.0403909 156.268938,42.2222989 C141.441288,16.5480408 114.11872,0.67821394 84.5,0.501491524 Z"></path> </g> <g id="Segment-60"> <use fill="#60ACFC" fill-rule="evenodd" xlink:href="#path-2"></use> <path stroke="#FFFFFF" stroke-width="1" d="M132.638123,151.747712 L115.606903,128.30201 C106.377641,134.873278 95.3301117,138.40879 84,138.40879 C64.5421754,138.40879 46.5598921,128.028615 36.8279272,111.176684 C27.0949518,94.3230032 27.0949518,73.5659591 36.8279272,56.7122784 C46.4764777,40.0047883 64.2345228,29.658588 83.5,29.4824571 L83.5,0.501493915 C66.0481679,0.605889468 49.0730399,6.1736095 34.9565182,16.4339106 C10.8339463,33.9595354 -2.10635642,63.0176431 1.01247118,92.6663704 C4.13203331,122.32208 22.8200782,148.048978 50.055978,160.176999 C77.1399595,172.237372 108.568325,169.016643 132.638123,151.747712 Z"></path> </g> </g> <circle id="Oval-2" fill="#FFFFFF" cx="818" cy="460" r="63"></circle> <g id="ic_男女比例" transform="translate(794.000000, 436.000000)"> <path d="M48.8902082,24.4863322 C49.5409106,26.7951839 46.6527055,27.7484058 45.9534858,25.5251728 L43.116652,15.741806 L42.2148013,15.741806 L47.1863955,32.9283389 L42.508759,32.9283389 L42.508759,45.8453512 C42.508759,48.1827425 39.1781904,48.1827425 39.1781904,45.8453512 L39.1781904,32.9283389 L38.1022484,32.9283389 L38.1022484,45.8453512 C38.1022484,48.1827425 34.6575215,48.1827425 34.6575215,45.8453512 L34.6575215,32.9283389 L30.1054591,32.9283389 L34.9743108,15.741806 L34.1809106,15.741806 L31.3526386,25.5251728 C30.6362952,27.6998885 27.7338203,26.7951839 28.4102082,24.4777703 L31.5752473,13.8753177 C31.9405538,12.6481159 33.4617133,10.556165 36.1130399,10.4562765 L41.2045003,10.4562765 C43.7673543,10.553311 45.2970756,12.6652397 45.7223153,13.8667559 L48.8902082,24.4863322 Z M38.6988832,10 C36.4867949,10 34.7003309,8.20684468 34.7003309,5.99849568 C34.7003309,3.79315532 36.4867949,2 38.6988832,2 C40.9109715,2 42.7003309,3.79315532 42.7003309,5.99849568 C42.7003309,8.20985333 40.9109715,10 38.6988832,10 Z" id="Combined-Shape" fill="#FB8B89"></path> <path d="M10.2260388,9.99990623 C8.01572952,9.99990623 6.2260388,8.21045352 6.2260388,5.99995311 C6.2260388,3.79246019 8.01572952,2 10.2260388,2 C12.4335989,2 14.2260388,3.79246019 14.2260388,5.99995311 C14.2260388,8.21947597 12.4335989,10.0149436 10.2260388,9.99990623 Z M14.5367634,10.4505686 C17.664701,10.4505686 19.7224045,12.982029 19.7138426,15.3736455 L19.7138426,26.9321739 C19.7138426,29.1753846 16.1578114,29.1753846 16.1578114,26.9321739 L16.1578114,16.2498105 L15.6012896,16.2498105 L15.6012896,45.3116611 C15.6012896,48.1941583 11.0121258,48.4995318 10.8180566,45.3259309 L10.8180566,28.5646377 L9.92762185,28.5646377 L9.92762185,45.3116611 C9.81917146,48.3111706 5.14438885,48.4082051 5.14438885,45.3116611 L5.14438885,16.2498105 L4.47656276,16.2498105 L4.47656276,26.9350279 C4.47656276,29.1782386 1.02898194,29.1782386 1.02898194,26.9350279 L1.02898194,15.3764994 C1.02898194,12.9763211 3.07812352,10.4505686 6.21176901,10.4505686 L14.5367634,10.4505686 Z" id="Combined-Shape" fill="#60ACFC"></path> </g> </g> </svg>';
+
 
 var gender_option = {
      graphic: {
@@ -92,7 +97,7 @@ var education_option = {
     legend: {
         show: false
     },
-    color: colorOrder ,
+    color: hotColor ,
     series: [
         {
             name: "学历",
@@ -148,7 +153,7 @@ var age_option = {
     legend: {
         show: false
     },
-    color: colorOrder ,
+    color: coolColor ,
     series: [
         {
             name: "年龄",
@@ -402,7 +407,7 @@ var region_option = {
             label: {
                 normal: {
                     show: true,
-                    fontSize: 8,
+                    fontSize: 10,
                     position: 'insideLeft'
                 },
                 emphasis: {
@@ -435,7 +440,7 @@ var place_option = {
     tooltip: {
         formatter: '{b}'
     },
-    color: ['#DCEF7A','#60ACFC', '#4EBECD', '#63D5B2', '#A1E497'],
+    color: coolColor,
     toolbox: {
         show: true,
         feature: {
@@ -453,8 +458,8 @@ var place_option = {
         layout: 'force',
         force: {
             repulsion: 80,
-            gravity: 0.1,
-            edgeLength: 80,
+            //gravity: 0.1,
+            edgeLength: [40, 70],
             layoutAnimation: true,
         },
         symbol: 'circle',
@@ -462,6 +467,7 @@ var place_option = {
         roam: false,
         itemStyle:{
           normal:{
+            color: coolColor,
             borderWidth: 0
           }
         },
@@ -487,13 +493,12 @@ var place_option = {
             }
         },
         categories:[
-          {
-          name: '交通',itemStyle:{normal:{color:"#DCEF7A"}}, label: { normal: {fontSize:14 }}},
-          {name: '生活服务',itemStyle:{normal:{color:"#60ACFC"}}, label: { normal: {fontSize:14 }}},
-          {name: '楼宇园区',itemStyle:{normal:{color:"#4EBECD"}}, label: { normal: {fontSize:14 }}},
-          {name: '教育培训',itemStyle:{normal:{color:"#63D5B2"}}, label: { normal: {fontSize:14 }}},
-          {name: '丽人',itemStyle:{normal:{color:"#A1E497"}}, label: { normal: {fontSize:14 }}},
-          {name: '购物',itemStyle:{normal:{color:"#DCEF7A"}}, label: { normal: {fontSize:14 }}}
+          {name: '交通',itemStyle:{normal:{color:coolColor[1]}}, label: { normal: {fontSize:14, color: '#ffffff' }}},
+          {name: '生活服务',itemStyle:{normal:{color:coolColor[2]}}, label: { normal: {fontSize:14, color: '#ffffff' }}},
+          {name: '楼宇园区',itemStyle:{normal:{color:coolColor[3]}}, label: { normal: {fontSize:14, color: '#ffffff' }}},
+          {name: '教育培训',itemStyle:{normal:{color:coolColor[4]}}, label: { normal: {fontSize:14, color: '#ffffff' }}},
+          {name: '丽人',itemStyle:{normal:{color:coolColor[5]}}, label: { normal: {fontSize:14, color: '#ffffff' }}},
+          {name: '购物',itemStyle:{normal:{color:coolColor[6]}}, label: { normal: {fontSize:14, color: '#ffffff' }}}
         ],
         data: [
         {
@@ -503,7 +508,7 @@ var place_option = {
             "draggable": "true",
             itemStyle:{
               normal:{
-                color: "#60ACFC"
+                color: coolColor[0]
               }
             },
             label: {
@@ -522,8 +527,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#333333'
+                position: 'inside'
               }
             }
         }, {
@@ -534,8 +538,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#ffffff'
+                position: 'inside'
               }
             }
         }, {
@@ -546,8 +549,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#ffffff'
+                position: 'inside'
               }
             }
         }, {
@@ -559,8 +561,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#ffffff'
+                position: 'inside'
               }
             }
         }, {
@@ -571,8 +572,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#ffffff'
+                position: 'inside'
               }
             }
         }, {
@@ -583,8 +583,7 @@ var place_option = {
             label: {
               normal:{
                 show: true,
-                position: 'inside',
-                color: '#333333'
+                position: 'inside'
               }
             }
         }, {
@@ -594,6 +593,11 @@ var place_option = {
             "draggable": "true"
         }, {
             "name": "数码家电",
+            "symbolSize": 5,
+            "category": '购物',
+            "draggable": "true"
+        }, {
+            "name": "大卖场",
             "symbolSize": 5,
             "category": '购物',
             "draggable": "true"
@@ -623,6 +627,11 @@ var place_option = {
             "category": '生活服务',
             "draggable": "true"
         }, {
+            "name": "保洁保姆",
+            "symbolSize": 12,
+            "category": '生活服务',
+            "draggable": "true"
+        }, {
             "name": "火车站",
             "symbolSize": 10,
             "category": '交通',
@@ -642,24 +651,54 @@ var place_option = {
             "symbolSize": 16,
             "category": '交通',
             "draggable": "true"
+        }, {
+            "name": "幼儿园",
+            "symbolSize": 16,
+            "category": '教育培训',
+            "draggable": "true"
+        }, {
+            "name": "课外培训班",
+            "symbolSize": 16,
+            "category": '教育培训',
+            "draggable": "true"
+        }, {
+            "name": "新东方",
+            "symbolSize": 16,
+            "category": '教育培训',
+            "draggable": "true"
+        }, {
+            "name": "美容院",
+            "symbolSize": 16,
+            "category": '丽人',
+            "draggable": "true"
+        }, {
+            "name": "美发厅",
+            "symbolSize": 16,
+            "category": '丽人',
+            "draggable": "true"
+        }, {
+            "name": "按摩院",
+            "symbolSize": 16,
+            "category": '丽人',
+            "draggable": "true"
         }],
 
         links: [{
             "source": 0,
             "target": '交通',
-            value: 150
+            "value": 100
         }, {
             "source": 0,
             "target": 2,
-            value: 150
+            "value": 150
         }, {
             "source": 0,
             "target": 3,
-            value: 150
+            "value": 250
         }, {
             "source": 0,
             "target": 4,
-            value: 150
+            "value": 950
         }, {
             "source": 0,
             "target": 5
@@ -685,8 +724,17 @@ var place_option = {
             "source": 2,
             "target": '房产中介'
         }, {
-            "source": 2,
+            "source": '高端住宅',
+            "target": '楼宇\n园区'
+        }, {
+            "source": '大卖场',
+            "target": '购物'
+        }, {
+            "source": "生活\n服务",
             "target": '宠物服务'
+        }, {
+            "source": "生活\n服务",
+            "target": '保洁保姆'
         }, {
             "source": '交通',
             "target": '飞机场'
@@ -699,6 +747,24 @@ var place_option = {
         }, {
             "source": '交通',
             "target": '地铁'
+        }, {
+            "source": '幼儿园',
+            "target": '教育\n培训'
+        }, {
+            "source": '课外培训班',
+            "target": '教育\n培训'
+        }, {
+            "source": '新东方',
+            "target": '教育\n培训'
+        }, {
+            "source": '美容院',
+            "target": '丽人'
+        }, {
+            "source": '美发厅',
+            "target": '丽人'
+        }, {
+            "source": '按摩院',
+            "target": '丽人'
         }]
     }]
 
@@ -713,7 +779,6 @@ if(document.getElementById('place_option')) {
 
 
 // 兴趣分布图
-var color = ["#60ACFC", "#32D3EB", "#5BC49F", "#FEB64D", "#FF7B7B", "#9287E7", "#00C1E0", "#9CDC82"];
 var datalist = [];
 var datalinks = [];
 var datacats = [];
@@ -722,6 +787,29 @@ var SecondLevelData = ["星星上的人", "心无挂碍", "解忧杂货店", "�
 var FirstLevelValue = [800, 700, 750, 850, 1000, 1200];
 var SecondLevelValue = [280, 220, 300, 200, 240, 260, 300, 200, 250, 300, 200, 350, 300, 200, 180, 320, 320, 350, 250, 280];
 
+// 0级别
+datalist.push({
+    "name": "兴趣\n分布",
+    "symbolSize": 70,
+    "category": "兴趣\n分布",
+    "draggable": "true",
+    "itemStyle": {
+      "normal": {
+        "color": hotColor[0]
+      }
+    },
+    "label": {
+      "normal":{
+        "show": true,
+        "position": 'inside',
+        fontSize: 16,
+        "color": '#ffffff'
+      }
+    },
+    "value": []
+});
+
+// 1级内容
 for (var i = 0; i < FirstLevelData.length; i++) {
     datalist.push({
         "name": FirstLevelData[i],
@@ -746,12 +834,13 @@ for (var i = 0; i < FirstLevelData.length; i++) {
         'name': FirstLevelData[i],
         'itemStyle':{
           'normal':{
-            'color': color[i]
+            'color': hotColor[i+1]
           }
         }
     });
 }
 
+// 2级内容
 for (var k = 0; k < SecondLevelData.length; k++) {
     if (k < 3) {
         datalist.push({
@@ -769,7 +858,7 @@ for (var k = 0; k < SecondLevelData.length; k++) {
         datalist.push({
             "name": SecondLevelData[k],
             "value": SecondLevelValue[k],
-            "symbolSize": 10,
+            "symbolSize": 16,
             "category": "人文\n社科",
             "draggable": false
         });
@@ -781,7 +870,7 @@ for (var k = 0; k < SecondLevelData.length; k++) {
         datalist.push({
             "name": SecondLevelData[k],
             "value": SecondLevelValue[k],
-            "symbolSize": 10,
+            "symbolSize": 14,
             "category": "经管",
             "draggable": false
         });
@@ -793,7 +882,7 @@ for (var k = 0; k < SecondLevelData.length; k++) {
         datalist.push({
             "name": SecondLevelData[k],
             "value": SecondLevelValue[k],
-            "symbolSize": 10,
+            "symbolSize": 12,
             "category": "励志",
             "draggable": false
         });
@@ -817,7 +906,7 @@ for (var k = 0; k < SecondLevelData.length; k++) {
         datalist.push({
             "name": SecondLevelData[k],
             "value": SecondLevelValue[k],
-            "symbolSize": 10,
+            "symbolSize": 8,
             "category": "生活",
             "draggable": false
         });
@@ -828,21 +917,7 @@ for (var k = 0; k < SecondLevelData.length; k++) {
     }
 }
 
-datalist.push({
-    "name": "兴趣\n分布",
-    "symbolSize": 70,
-    "category": "兴趣\n分布",
-    "draggable": "true",
-    "label": {
-      "normal":{
-        "show": true,
-        "position": 'inside',
-        fontSize: 16,
-        "color": '#ffffff'
-      }
-    },
-    "value": []
-});
+
 
 var interests_option = {
     tooltip: {},
@@ -865,7 +940,7 @@ var interests_option = {
         layout: 'force',
 
         force: {
-          edgeLength: 70,
+          edgeLength: [40, 70],
           repulsion: 80
         },
         data: datalist,
