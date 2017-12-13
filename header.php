@@ -46,6 +46,7 @@
     </ul>
 
     <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="https://github.com/thirtyjin/dux_charts/issues" target="_blank">需求+反馈</a></li>
         <li class="nav-item" id="wise-view"><a class="nav-link" data-toggle="tooltip" title="手机预览 <img src='assets/img/qrcode.png' style='height:150px;' />">手机版</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">使用帮助</a>
