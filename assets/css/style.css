@@ -63,9 +63,11 @@ a {
 }
 
 
-.page-header {
-	margin: 0px;
-}
+.page-header{
+	padding-bottom:9px;
+	margin:20px 0 30px;
+	border-bottom:1px solid #eeeeee;}
+
 
 /* 位置要放在 page-header 下面 */
 .margintop_header {

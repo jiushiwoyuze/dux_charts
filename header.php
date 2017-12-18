@@ -2,7 +2,7 @@
 <html lang="zh">
 
 <?php
-  $site_name = 'Baidu ONE DESIGN 数据图表';
+  $site_name = 'ONE 数据图表库 - ONE DESIGN';
 ?>
 <head>
     <meta charset="utf-8">
