@@ -1,0 +1,38 @@
+---
+layout: default
+title: 人群画像
+navbar_active: charts-portrait
+relative_path: ./
+---
+
+
+
+
+
+<div class="mt-4">
+    <ul class="list-inline">
+        <li class="list-inline-item"><h4 class="card-title">{{ page.title }}</h4></li>
+    </ul>
+</div>
+<div class="row">
+
+{% for chart in site.charts_portrait_meta %}
+  <div class="col-md-{{ chart.col }}">
+    <div class="card card-default">
+      <div class="card-body">
+        <div id="{{ chart.id }}" ></div>
+      </div>
+      <div class="card-footer">
+        <strong>{{ chart.name }}: </strong>
+        {% if chart.path %}
+        <a class="card-link" href="{{ chart.path }}" target="_blank"> 交互引用 </a>
+        {% endif %}
+        {% if chart.editurl %}
+        <a class="card-link" href="{{ chart.editurl }}" target="_blank"> 编辑调整 </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+</div>

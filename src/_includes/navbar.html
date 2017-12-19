@@ -1,0 +1,43 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <a class="navbar-brand" href="index">ONE 图表库 <sup>Beta</sup></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+
+      <!-- <li class="nav-item">
+        <a class="nav-link {% if page.navbar_active == "home" %} active{% endif %} " href="index.html">通用图标 <span id="allsum" class="badge badge-pill badge-light" title="图标总数"></span></a>
+      </li>     -->
+
+      <li class="nav-item {% if page.navbar_active == "home" %} active{% endif %} "><a class="nav-link" href="index.html">首页</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-line" %} active{% endif %} "><a class="nav-link" href="line.html">线性图</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-bar" %} active{% endif %} "><a class="nav-link" href="bar.html">条/柱图</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-pie" %} active{% endif %} "><a class="nav-link" href="pie.html">饼/环图</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-map" %} active{% endif %} "><a class="nav-link" href="map.html">地图</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-graph" %} active{% endif %} "><a class="nav-link" href="graph.html">关系图</a></li>
+      <li class="nav-item {% if page.navbar_active == "charts-portrait" %} active{% endif %} "><a class="nav-link" href="portrait.html">人群画像 DEMO</a></li>
+
+    </ul>
+
+    <ul class="navbar-nav">
+      <li class="nav-item" id="wise-view"><a class="nav-link" data-toggle="tooltip" title="手机预览 <img src='assets/img/qrcode.png' style='height:150px;' />">手机版</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">图表配置文件</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="assets/js/dux-theme.js" target="_blank">DUX 主题配置文件下载</a></li>
+          <div class="dropdown-divider"></div>
+          <li><a class="dropdown-item" href="assets/js/dux-line.js" target="_blank">线形图表 配置文件下载</a></li>
+          <li><a class="dropdown-item" href="assets/js/dux-pie.js" target="_blank">饼环图表 配置文件下载</a></li>
+          <li><a class="dropdown-item" href="assets/js/dux-bar.js" target="_blank">柱条图表 配置文件下载</a></li>
+          <li><a class="dropdown-item" href="assets/js/dux-map.js" target="_blank">地图图表 配置文件下载</a></li>
+          <li><a class="dropdown-item" href="assets/js/dux-graph.js" target="_blank">关系图表 配置文件下载</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.github.url}}/issues" target="_blank">需求+反馈</a></li>
+      {% include navbar-transfer-menu.html %}
+    </ul>
+  </div>
+</nav>

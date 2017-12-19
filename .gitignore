@@ -1,2 +1,5 @@
 
-lite_line/line_base_area_test.php
+_site/
+Gemfile
+Gemfile.lock
+*/.DS_Store
