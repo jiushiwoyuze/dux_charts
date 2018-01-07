@@ -34,8 +34,8 @@
         "textStyle": {},
         "grid":{ // add by jinlei
             "borderWidth": 0,
-            "left": 10,
-            "right": 10,
+            "left": 0,
+            "right": 0,
             "top": 10,
             "bottom": 10,
             "containLabel": true

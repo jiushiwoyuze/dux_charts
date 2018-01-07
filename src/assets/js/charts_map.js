@@ -27,7 +27,9 @@ if(document.getElementById('map_china')) {
             max: 1000,
             text:['多','少'],
             realtime: false,
-            left: 30,
+            itemWidth: 16,
+            itemHeight: 120,
+            left: 0,
             calculable : true,
             inRange: {
                 color: ['#60ACFC', 'rgba(159,205,253,0.70)'],
@@ -37,7 +39,6 @@ if(document.getElementById('map_china')) {
                 color: ['#EEEEEE'],
                 symbolSize: [100, 100]
             }
-            //color: ['#60ACFC','rgba(159,205,253,0.70)']
         },
         toolbox: {
             show: false
@@ -218,4 +219,3 @@ if(document.getElementById('map_china')) {
     // 使用刚指定的配置项和数据显示图表。
     MapChina.setOption(map_china);
 }
-

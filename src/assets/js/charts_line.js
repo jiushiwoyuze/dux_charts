@@ -16,7 +16,7 @@ var categoryList = [
                 ['首次', '1~5 天', '6~10 天', '11~15 天', '16~20 天', '21~25 天', '26~30 天'],
                 ['0~10 分钟', '10~30 分钟', '31~60 分钟', '61~90 分钟', '91~120 分钟'],
                 ['07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '11:00', '12:00', '13:00']
-            ];          
+            ];
 
 //
 // Chart 1
@@ -174,7 +174,7 @@ if(document.getElementById('line_broken')) {
         title: {
             text: "折线图表"
         },
-        
+
         tooltip: {
         },
         legend: {
@@ -319,7 +319,7 @@ if(document.getElementById('line_gradient_area')) {
         ]
     };
     LineGradientArea.setOption(line_gradient_area);
-    
+
 }
 
 
@@ -477,6 +477,7 @@ if(document.getElementById('line_area_datazoom')) {
         },
         dataZoom: [{
             type: 'inside',
+            zoomOnMouseWheel: false,
             start: 0,
             end: 50
         }, {
@@ -492,12 +493,14 @@ if(document.getElementById('line_area_datazoom')) {
             borderColor: '#E7E7E7',
             fillerColor: 'rgba(188,188,188,0.3)',
             handleIcon: 'M9,0 C13.9705627,-9.13077564e-16 18,4.02943725 18,9 L18,17 C18,21.9705627 13.9705627,26 9,26 L9,26 C4.02943725,26 9.49050257e-15,21.9705627 8.8817842e-15,17 L0,9 L0,9 C-6.08718376e-16,4.02943725 4.02943725,9.13077564e-16 9,0 Z M6,10 L6,11 L12,11 L12,10 L6,10 Z M6,13 L6,14 L12,14 L12,13 L6,13 Z M6,16 L6,17 L12,17 L12,16 L6,16 Z',
-            handleSize: '100%',
+            handleSize: '90%',
             handleStyle: {
                 borderType: 'solid',
                 borderWidth: 1,
                 color : '#ffffff'
             },
+            left:10,
+            right:10,
             bottom: 10,
         }],
         series: [
@@ -666,6 +669,5 @@ if(document.getElementById('line_logo')) {
         ]
     };
     LineLogo.setOption(line_logo);
-    
-}
 
+}

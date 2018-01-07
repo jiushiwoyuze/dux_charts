@@ -92,8 +92,7 @@ ul {
 
 
 #hreo_show {
-  height: 300px;
-  max-height: 300px;
+  min-height: 200px;
   background-image: url(../img/dark_mask.svg), url(../img/duxcharts_hero.jpg);
   background-size: cover,cover;
   background-position: center bottom, center center;
@@ -144,24 +143,16 @@ ul {
 
 
 /* Charts */
-
 #bar_h_negative,
 #bar_v_base,
 #bar_v_mult,
 #bar_h_base,
-#bar_h_stack {
-	height: 360px;
-}
-
-
+#bar_h_stack,
 #pie_ring_center,
 #pie_ring,
 #pie_base,
 #pie_rose,
-#pie_nest {
-	height: 360px;
-}
-
+#pie_nest,
 #graph_interests_option,
 #graph_place_option,
 #line_area_datazoom,
@@ -169,16 +160,9 @@ ul {
 #line_gradient_area,
 #line_broken,
 #line_base_area,
-#line_base {
-	height: 360px;
-}
-
+#line_base,
 #map_china_two,
-#map_china {
-	height: 360px;
-}
-
-
+#map_china,
 #graph_force_one,
 #graph_force_two {
 	height: 360px;
@@ -203,3 +187,76 @@ ul {
 #place_option {
 	height: 360px;
 }
+
+
+
+
+@media (max-width: 575.99px) {
+
+	.navbar-dark .navbar-toggler {
+	    border: none;
+	}
+
+	#hreo_title {
+		font-weight: normal;
+		font-size: 1.5rem;
+	}
+
+	#hreo_desc {
+	font-size: 1rem;
+	}
+
+
+
+	/* Charts */
+	#bar_h_negative,
+	#bar_v_base,
+	#bar_v_mult,
+	#bar_h_base,
+	#bar_h_stack,
+	#pie_ring_center,
+	#pie_ring,
+	#pie_base,
+	#pie_rose,
+	#pie_nest,
+	#graph_interests_option,
+	#graph_place_option,
+	#line_area_datazoom,
+	#line_multi_y,
+	#line_gradient_area,
+	#line_broken,
+	#line_base_area,
+	#line_base,
+	#map_china_two,
+	#map_china {
+		height: 260px;
+	}
+
+	#graph_force_one,
+	#graph_force_two {
+		height: 320px;
+	}
+
+
+
+	/* 人群画像 DEMO */
+
+	#app_option,
+	#wealth_option,
+	#stage_option{
+		height: 260px;
+	}
+	#gender_option,
+	#age_option,
+	#education_option{
+		height: 300px;
+	}
+	#region_option,
+	#interests_option,
+	#place_option {
+		height: 360px;
+	}
+
+
+
+} // end @media (max-width: 575.99px)
