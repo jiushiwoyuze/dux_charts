@@ -1,0 +1,56 @@
+---
+layout: base
+title: 图表库概览
+navbar_active: home
+relative_path: ./
+cahrts_cats:
+  - name: 线形图表
+    id: line_base_area
+    url: line.html
+    col: 6
+  - name: 条形/柱状图表
+    id: bar_v_base
+    url: bar.html
+    col: 6
+  - name: 饼/环图表
+    id: pie_ring
+    url: pie.html
+    col: 6
+  - name: 关系图表
+    id: graph_force_one
+    url: graph.html
+    col: 6
+  - name: 地图图表
+    id: map_china
+    url: map.html
+    col: 12
+---
+
+{% include hero_show.html %}
+
+<div class="container bg-light mt-4 mb-4">
+
+  <div class="mt-4">
+      <ul class="list-inline">
+          <li class="list-inline-item"><h4 class="card-title">{{ page.title }}</h4></li>
+      </ul>
+  </div>
+  <div class="row">
+
+  {% for chart in page.cahrts_cats %}
+    <div class="col-md-{{ chart.col }}">
+      <div class="card card-default">
+        <div class="card-header">
+          <strong>{{ chart.name }}: </strong>
+          <a class="card-link" href="{{ chart.url }}"> 查看更多 </a>
+        </div>
+        <div class="card-body">
+          <div id="{{ chart.id }}" ></div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  </div>
+
+</div>
