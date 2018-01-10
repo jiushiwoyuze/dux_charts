@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php print $page_title; ?></title>
-    <meta name="description" content="百度商业设计规范库 度量衡图表 示例库">
+    <meta name="description" content="商业设计规范库 度量衡图表 示例库">
     <meta name="author" content="ThirtyJin">
 
 
