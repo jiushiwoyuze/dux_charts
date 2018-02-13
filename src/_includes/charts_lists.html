@@ -1,0 +1,57 @@
+
+{% case page.charts_id %}
+
+  <!-- 线性图 -->
+  {% when 'line_base' %}
+    <div id="line_base"></div>
+  {% when 'line_base_area' %}
+    <div id="line_base_area"></div>
+  {% when 'line_multi_y' %}
+    <div id="line_multi_y"></div>
+  {% when 'line_broken' %}
+    <div id="line_broken"></div>
+  {% when 'line_gradient_area' %}
+    <div id="line_gradient_area"></div>
+  {% when 'line_area_datazoom' %}
+    <div id="line_area_datazoom"></div>
+
+  <!-- 柱条图 -->
+  {% when 'bar_v_base' %}
+    <div id="bar_v_base"></div>
+  {% when 'bar_v_mult' %}
+    <div id="bar_v_mult"></div>
+  {% when 'bar_h_base' %}
+    <div id="bar_h_base"></div>
+  {% when 'bar_h_stack' %}
+    <div id="bar_h_stack"></div>
+  {% when 'bar_h_negative' %}
+    <div id="bar_h_negative"></div>
+
+  <!-- 饼环图 -->
+  {% when 'pie_base' %}
+    <div id="pie_base"></div>
+  {% when 'pie_ring' %}
+    <div id="pie_ring"></div>
+  {% when 'pie_ring_center' %}
+    <div id="pie_ring_center"></div>
+  {% when 'pie_rose' %}
+    <div id="pie_rose"></div>
+  {% when 'pie_nest' %}
+    <div id="pie_nest"></div>
+
+  <!-- 地图 -->
+  {% when 'map_china' %}
+    <div id="map_china"></div>
+  {% when 'map_china_two' %}
+    <div id="map_china_two"></div>
+
+  <!-- 关系图 -->
+  {% when 'graph_force_one' %}
+    <div id="graph_force_one"></div>
+  {% when 'graph_force_two' %}
+    <div id="graph_force_two"></div>
+
+  <!-- 其它 -->
+  {% else %}
+     Thank you !
+{% endcase %}

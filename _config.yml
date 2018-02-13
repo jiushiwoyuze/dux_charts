@@ -1,1 +1,217 @@
-theme: jekyll-theme-slate
+# Server
+baseurl: "/dux_charts"
+url:     "http://thirtyjin.com"
+
+source: src
+destination: _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+# ensures SCSS files are compiled
+include: [_*.scss]
+
+
+# plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-toc
+
+
+# social
+title: THIRTY 数据图表库
+description: THIRTY 数据图表库。
+
+lang: zh
+
+# Custom variables
+site_url:       http://thirtyjin.com
+blog_url:       http://thirtyjin.com
+
+author:
+  name:         Thirty Jin
+  email:        thirty.jin@qq.com
+  twitter_username:      thirtyjin
+  github_username:       thirtyjin
+github:
+  url:          https://github.com/thirtyjin/dux_charts
+  project:      dux_axure_library
+  org:          thirtyjin
+license:
+  font:
+    version:      SIL OFL 1.1
+    url:          http://scripts.sil.org/OFL
+  code:
+    version:      MIT License
+    url:          http://opensource.org/licenses/mit-license.html
+  documentation:
+    version:      CC BY 3.0
+    url:          http://creativecommons.org/licenses/by/3.0/
+
+
+# charts_line_meta
+charts_line_meta:
+  - id: line_base_area
+    name: 线性面积图表
+    path: lite_line/line_base_area.html
+    editurl: https://codepen.io/thirtyjin/pen/BwVzbJ
+    col: 12
+
+  - id: line_base
+    name: 线性基础图表
+    path: lite_line/line_base.html
+    editurl: https://codepen.io/thirtyjin/pen/GMdYEV/
+    col: 12
+
+  - id: line_multi_y
+    name: 多Y轴线性图表
+    path: lite_line/line_multi_y.html
+    editurl: https://codepen.io/thirtyjin/pen/JraqBJ
+    col: 12
+
+  - id: line_broken
+    name: 折线图表
+    path: lite_line/line_broken.html
+    editurl: https://codepen.io/thirtyjin/pen/YrObJL
+    col: 6
+
+  - id: line_gradient_area
+    name: 线性极简面积图表
+    path: lite_line/line_gradient_area.html
+    editurl: https://codepen.io/thirtyjin/pen/oGPRJE
+    col: 6
+
+  - id: line_area_datazoom
+    name: 线性数据缩放图表
+    path: lite_line/line_area_datazoom.html
+    editurl: ##
+    col: 12
+
+# charts_bar_meta
+charts_bar_meta:
+  - id: bar_v_base
+    name: 基础柱形图
+    path: lite_bar/bar_v_base.html
+    editurl: #
+    col: 6
+  - id: bar_v_mult
+    name: 对比柱形图
+    path: lite_bar/bar_v_mult.html
+    editurl: #
+    col: 6
+  - id: bar_h_base
+    name: 基础条形图
+    path: lite_bar/bar_h_base.html
+    editurl: #
+    col: 6
+  - id: bar_h_stack
+    name: 条形叠加图
+    path: lite_bar/bar_h_stack.html
+    editurl: #
+    col: 6
+  - id: bar_h_negative
+    name: 正负条形图
+    path: lite_bar/bar_h_negative.html
+    editurl: #
+    col: 6
+
+# charts_pie_meta
+charts_pie_meta:
+  - id: pie_base
+    name: 基础饼图
+    path: lite_pie/pie_base.html
+    editurl: #
+    col: 4
+  - id: pie_ring
+    name: 基础环形图
+    path: lite_pie/pie_ring.html
+    editurl: #
+    col: 4
+  - id: pie_ring_center
+    name: 环形文字图
+    path: lite_pie/pie_ring_center.html
+    editurl: #
+    col: 4
+  - id: pie_rose
+    name: 玫瑰图
+    path: lite_pie/pie_rose.html
+    editurl: #
+    col: 6
+  - id: pie_nest
+    name: 环形嵌套图
+    path: lite_pie/pie_nest.html
+    editurl: #
+    col: 6
+
+#charts_map_meta
+charts_map_meta:
+  - id: map_china
+    name: 中国地图
+    path: lite_map/map_china.html
+    editurl: #
+    col: 12
+
+#charts_graph_meta
+charts_graph_meta:
+  - id: graph_force_one
+    name: 力引导布局1
+    path: lite_graph/graph_force_one.html
+    editurl: #
+    col: 6
+  - id: graph_force_two
+    name: 力引导布局2
+    path: lite_graph/graph_force_two.html
+    editurl: #
+    col: 6
+
+#charts_portrait_meta
+charts_portrait_meta:
+  - id: age_option
+    name: 年龄占比
+    path: #
+    editurl: #
+    col: 4
+  - id: gender_option
+    name: 性别比例
+    path: #
+    editurl: #
+    col: 4
+  - id: education_option
+    name: 学历分布
+    path: #
+    editurl: #
+    col: 4
+  - id: region_option
+    name: 地域分布
+    path: #
+    editurl: #
+    col: 12
+  - id: interests_option
+    name: 兴趣爱好
+    path: #
+    editurl: #
+    col: 6
+  - id: place_option
+    name: 场所分布
+    path: #
+    editurl: #
+    col: 6
+  - id: stage_option
+    name: 人生阶段
+    path: #
+    editurl: #
+    col: 4
+  - id: wealth_option
+    name: 财产状况
+    path: #
+    editurl: #
+    col: 4
+  - id: app_option
+    name: APP 偏好
+    path: #
+    editurl: #
+    col: 4
